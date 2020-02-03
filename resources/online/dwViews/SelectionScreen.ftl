@@ -105,8 +105,8 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				// helloJSONList();
+				// helloWord("Student");
 				
 			}
 			
@@ -115,17 +115,7 @@
 			// -----------------------------------------
             function selectPlayer(){
                 var numOfPlayer=prompt("Enter the number of players you want to play against.",4)
-                window.location.href='Game.html'
-                var xhr = createCORSRequest('Get',"http://localhost:7777/toptrumps/game")
-                if (!xhr) {
-  					alert("CORS not supported");
-				}
-                xhr.onload = function(e) {
- 					var responseText = xhr.response; // the text of the response
-					alert(responseText); // lets produce an alert
-				};
-				
-				xhr.send();	
+                window.location.href='game'
             
             }
 		

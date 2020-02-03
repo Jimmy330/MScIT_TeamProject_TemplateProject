@@ -22,7 +22,6 @@
     <style>
         body {
             background-image: url(https://i.ibb.co/rmBjPS4/background.jpg);
-            background-color: rgba(0, 0, 0, 0.2);
             background-size: cover;
         }
 
@@ -93,7 +92,7 @@
         </div>
         <div style="widows: inherit;;height: 350px;background-color: khaki;">
             <div id="humanCard" class="card">
-                <!-- <h5>Jam (7)</h5> -->
+                <h5 id="caren">Jam (7)</h5> 
                 <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">Star</img>
                 <table>
                     <tr>
@@ -252,11 +251,11 @@
             // --------------------------------------------------------------------------
             // You can call other methods you want to run when the page first loads here
             // --------------------------------------------------------------------------
-            
 
             // For example, lets call our sample methods
-            // helloJSONList();
-            // helloWord("Student");
+            //helloJSONList();
+            //helloWord("Student");
+            getRoundNo();
 
         }
 
@@ -335,6 +334,20 @@
             };
 
             // We have done everything we need to prepare the CORS request, so send it
+            xhr.send();
+        }
+
+        function getRoundNo(){
+            var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/getRoundNo");
+            if (!xhr) {
+                alert("CORS not supported");
+            }
+            xhr.onload = function (e) {
+                var responseText = xhr.response; // the text of the response
+                document.getElementById("caren").innerHTML=responseText;
+                //alert(responseText); // lets produce an alert
+            };
+
             xhr.send();
         }
 

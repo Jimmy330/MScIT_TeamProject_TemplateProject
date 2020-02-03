@@ -16,7 +16,65 @@
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css"/>
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <style>
+            body {
+                background-image: url(https://i.ibb.co/rmBjPS4/background.jpg);
+                background-color: rgba(0, 0, 0, 0.2);
+                background-size: cover;
+            }
+    
+            .div1 {
+                margin-top: 50px;
+            }
+    
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                width: 180px;
+                border-radius: 5px;
+                border-color: rgba(0, 0, 0, 0.2);
+                float: left;
+                margin-right: 5%;
+                text-align: center;
+                background-color: rgba(243, 247, 247, 0.644);
+            }
+    
+            .card:hover {
+                box-shadow: 0 80px 16px 0 rgba(0, 0, 0, 0.0.2);
+            }
+    
+            img {
+                border-radius: 5px 5px 0 0;
+                border-color: rgba(0, 0, 0, 0.2);
+            }
+    
+            td {
+                padding-left: 1rem;
+                border-top: 1px dashed rgba(0, 0, 0, 0.2);
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.2);    
+            }
+    
+            p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+            }
+    
+            button {
+                background-color: rgba(0, 0, 0, 0.9);
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 20px;
+                cursor: pointer;
+            }
+        </style>
 
 	</head>
 
@@ -24,7 +82,16 @@
     	
     	<div class="container">
 
-			<!-- Add your HTML Here -->
+            <!-- Add your HTML Here -->
+            <div id="Banner" style="text-align: center;">
+                <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
+            </div>
+            <div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
+                <button onclick="selectPlayer()">START NEW GAME</button>
+                <button onclick="javascript:window.location.href='Statistics.html'">GAME STATISTICS</button>
+            
+            </div>
+			
 		
 		</div>
 		
@@ -38,14 +105,19 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				// helloJSONList();
+				// helloWord("Student");
 				
 			}
 			
 			// -----------------------------------------
 			// Add your other Javascript methods Here
 			// -----------------------------------------
+            function selectPlayer(){
+                var numOfPlayer=prompt("Enter the number of players you want to play against.",4)
+                window.location.href='game'
+            
+            }
 		
 			// This is a reusable method for creating a CORS request. Do not edit this.
 			function createCORSRequest(method, url) {

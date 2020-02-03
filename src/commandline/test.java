@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) throws Exception{
-		TopTrumpModel model=new TopTrumpModel();
+		TopTrumpModel model=new TopTrumpModel(true);
 //		TopTrumpJDBC jdbc=new TopTrumpJDBC(model);
 //		jdbc.test();
 		TopTrumpView view=new TopTrumpView(model);

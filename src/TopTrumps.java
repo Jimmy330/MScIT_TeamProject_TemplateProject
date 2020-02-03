@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 import commandline.TopTrumpsCLIApplication;
 
 import online.TopTrumpsOnlineApplication;
@@ -6,8 +8,9 @@ import online.TopTrumpsOnlineApplication;
 
 public class TopTrumps {
 
-	/** This is the main class for the TopTrumps Applications */
-	public static void main(String[] args) {
+	/** This is the main class for the TopTrumps Applications 
+	 * @throws IOException */
+	public static void main(String[] args) throws IOException {
 		
 		System.out.println("--------------------");
 		System.out.println("--- Top Trumps   ---");

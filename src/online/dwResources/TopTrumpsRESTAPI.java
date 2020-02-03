@@ -16,6 +16,10 @@ import online.configuration.TopTrumpsJSONConfiguration;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
+import commandline.TopTrumpController;
+import commandline.TopTrumpModel;
+import commandline.TopTrumpView;
+
 @Path("/toptrumps") // Resources specified here should be hosted at http://localhost:7777/toptrumps
 @Produces(MediaType.APPLICATION_JSON) // This resource returns JSON content
 @Consumes(MediaType.APPLICATION_JSON) // This resource can take JSON content as input
@@ -41,19 +45,30 @@ public class TopTrumpsRESTAPI {
 	 * the deck file and the number of AI players.
 	 * @param conf
 	 */
-	
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) {
 		// ----------------------------------------------------
 		// Add relevant initalization here
 		// ----------------------------------------------------
-		
+		num=conf.getNumAIPlayers();
 	}
+	private int num;
+	private TopTrumpModel model;
 	
 
-	// ----------------------------------------------------
-	// Add relevant API methods here
-	// ----------------------------------------------------
+	@GET
+	@Path("/getRoundNo")
+	public String getRound() throws IOException{
+		model=new TopTrumpModel(false);
+		return Integer.toString(model.getNumOfRounds());
+	}
+
+	// @GET
+	// @Path("/getPlayer")
+	// public String getPlayer(){
+	// 	model.getPlayer();
+	// }
 	
+
 	@GET
 	@Path("/helloJSONList")
 	/**
