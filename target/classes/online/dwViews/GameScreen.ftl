@@ -92,141 +92,61 @@
         </div>
         <div style="widows: inherit;;height: 350px;background-color: khaki;">
             <div id="humanCard" class="card">
-                <h5 id="caren">Jam (7)</h5> 
-                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">Star</img>
-                <table>
-                    <tr>
-                        <td>
-                            <p>test 7</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-
-
-
-                </table>
+                <h5 id="humanPlayerName"></h5> 
+                <h5 id="numOfCard_human"></h5>
+                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;"></img>
+                <h5 id="cardName_human" ></h5>
+                <table id="humanPlayer"> </table>
             </div>
             <div id="menu" style="width: 360px;float: left;height: 350px;background-color: rgb(240, 200, 140);">
                 <div id="round" style="width: 360px;height: 30px;background-color: lavenderblush;">
-
+                    <h1 id="roundNo"></h1>
                 </div>
-                <div id="message" style="width: inherit;height: 90px;background-color: lightcoral;">
+                <div id="messageArea" style="width: inherit;height: 90px;background-color: lightcoral;">
+                    <p id="message"></p>
 
                 </div>
                 <div id="button" style="width: inherit;height: 30px;background-color: lawngreen;">
-                    <button id="showWinner">Show Winner</button>
+                    <button id="showWinner" onclick="roundWinner()">Show Winner</button>
 
                 </div>
 
             </div>
         </div>
 
-        <div id="AIcard" style="widows: inherit;height: 350px;">
-            <div class="card">
-                <!-- <h5>Jam (7)</h5> -->
-                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">Star</img>
-                <table>
-                    <tr>
-                        <td>
-                            <p>test 7</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-
-
-
-                </table>
+        <div id="AIcardArea" style="widows: inherit;height: 350px;">
+            <div id="AI1" class="card">
+                <h5 id="AI1_Name">Jam (7)</h5> 
+                <strong id="numOfCard_AI1"></strong>
+                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;"></img>
+                <h5 id="cardName_AI1" ></h5>
+                <table id="AIPlayer1"></table>
             </div>
 
-            <div class="card">
+            <div id="AI2" class="card">
+                <h5 id="AI2_Name">Jam (7)</h5> 
+                <strong id="numOfCard_AI2"></strong>
                 <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">
-                <table>
-                    <tr>
-                        <td>
-                            <p>test 7</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>test 07</p>
-                        </td>
-                        <td>
-                            <p>7</p>
-                        </td>
-                    </tr>
-                </table>
+                <h5 id="cardName_AI2" ></h5>
+                <table id="AIPlayer2"></table>
             </div>
+
+            <div id="AI3" class="card">
+                <h5 id="AI3_Name">Jam (7)</h5> 
+                <strong id="numOfCard_AI3"></strong>
+                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">
+                <h5 id="cardName_AI3" ></h5>
+                <table id="AIPlayer3"></table>
+            </div>
+
+            <div id="AI4" class="card">
+                <h5 id="AI4_Name">Jam (7)</h5> 
+                <strong id="numOfCard_AI4"></strong>
+                <img src="https://i.ibb.co/rmBjPS4/background.jpg" alt="" style="width: 100%;">
+                <h5 id="cardName_AI4" ></h5>
+                <table id="AIPlayer4"></table>
+            </div>
+
         </div>
 
 
@@ -235,10 +155,6 @@
 
         </div>
     </div>
-
-
-
-
 
 
     </div>
@@ -253,9 +169,10 @@
             // --------------------------------------------------------------------------
 
             // For example, lets call our sample methods
-            //helloJSONList();
-            //helloWord("Student");
+            
+            loadCards(); 
             getRoundNo();
+            getSelector();
 
         }
 
@@ -308,6 +225,7 @@
             // to do when the response arrives 
             xhr.onload = function (e) {
                 var responseText = xhr.response; // the text of the response
+                
                 alert(responseText); // lets produce an alert
             };
 
@@ -338,18 +256,135 @@
         }
 
         function getRoundNo(){
-            var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/getRoundNo");
+            var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/roundNo");
             if (!xhr) {
                 alert("CORS not supported");
             }
             xhr.onload = function (e) {
-                var responseText = xhr.response; // the text of the response
-                document.getElementById("caren").innerHTML=responseText;
+                var responseText = xhr.response; 
+                document.getElementById("roundNo").innerHTML="Round "+responseText;
                 //alert(responseText); // lets produce an alert
             };
 
             xhr.send();
         }
+        
+
+
+        function loadCards(){
+            var xhr = createCORSRequest('GET',"http://localhost:7777/toptrumps/card");
+            if(!xhr){
+                alert("CORS not supported");
+            }
+            xhr.onload = function(e){
+                var responseText = xhr.response; 
+                var card=JSON.parse(responseText);
+                //alert(card);
+
+                // human card
+                document.getElementById("humanPlayerName").innerHTML=card[0][0];
+                document.getElementById("numOfCard_human").innerHTML=card[0][1];
+                document.getElementById("cardName_human").innerText=card[0][2];
+                var category ="";               
+                for(var i=3;i<8;i++ ) {
+                    category +="<tr><td>"+card[0][i]+"</td></tr>"
+                };
+                document.getElementById("humanPlayer").innerHTML=category;
+
+                // AI1 card
+                document.getElementById("AI1_Name").innerHTML=card[1][0];
+                document.getElementById("numOfCard_AI1").innerHTML=card[1][1];
+                document.getElementById("cardName_AI1").innerText=card[1][2];
+                var category ="";               
+                for(var i=3;i<8;i++ ) {
+                    category +="<tr><td>"+card[1][i]+"</td></tr>"
+                };
+                document.getElementById("AIPlayer1").innerHTML=category;
+
+                // AI2 card
+                document.getElementById("AI2_Name").innerHTML=card[2][0];
+                document.getElementById("numOfCard_AI2").innerHTML=card[2][1];
+                document.getElementById("cardName_AI2").innerText=card[2][2];
+                var category ="";               
+                for(var i=3;i<8;i++ ) {
+                    category +="<tr><td>"+card[2][i]+"</td></tr>"
+                };
+                document.getElementById("AIPlayer2").innerHTML=category;
+
+                // AI3 card
+                document.getElementById("AI3_Name").innerHTML=card[3][0];
+                document.getElementById("numOfCard_AI3").innerHTML=card[3][1];
+                document.getElementById("cardName_AI3").innerText=card[3][2];
+                var category ="";               
+                for(var i=3;i<8;i++ ) {
+                    category +="<tr><td>"+card[3][i]+"</td></tr>"
+                };
+                document.getElementById("AIPlayer3").innerHTML=category;
+
+                // AI4 card
+                document.getElementById("AI4_Name").innerHTML=card[4][0];
+                document.getElementById("numOfCard_AI4").innerHTML=card[4][1];
+                document.getElementById("cardName_AI4").innerText=card[4][2];
+                var category ="";               
+                for(var i=3;i<8;i++ ) {
+                    category +="<tr><td>"+card[4][i]+"</td></tr>"
+                };
+                document.getElementById("AIPlayer4").innerHTML=category;
+
+    
+            }
+            xhr.send();
+
+
+        }
+
+        function getSelector(){
+            var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/select");
+            if (!xhr) {
+                alert("CORS not supported");
+            }
+            xhr.onload = function (e) {
+                var responseText =JSON.parse(xhr.response) ; 
+                
+                alert(responseText);
+                if(responseText[0]=="You"){
+                    document.getElementById("message").innerHTML="It's your turn to select a category!"
+                }
+                document.getElementById("message").innerHTML=responseText[0]+" selected "+responseText[1];
+                
+            };
+
+            xhr.send();
+        }
+
+        function roundWinner(){
+            var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/roundWinner");
+            if (!xhr) {
+                alert("CORS not supported");
+            }
+            xhr.onload = function (e) {
+                var responseText = xhr.response; 
+                document.getElementById("message").innerHTML=responseText+" win this round ";
+           //add css show AI cards
+
+            xhr.send();
+        }
+        }
+
+        // function nextRound(){
+        //     var xhr =createCORSRequest('GET', "http://localhost:7777/toptrumps/nextRound");
+        //     if (!xhr) {
+        //         alert("CORS not supported");
+        //     }
+        //     xhr.onload = function (e) {
+        //         var responseText = xhr.response; 
+        //         document.getElementById("message").innerHTML=responseText+" win this round ";
+        //    //add css show AI cards
+
+            
+        // }
+
+
 
     </script>
 

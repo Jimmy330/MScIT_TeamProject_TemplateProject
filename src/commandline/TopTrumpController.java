@@ -31,11 +31,11 @@ public class TopTrumpController {
 			viewObject.printDrawCard();
 			
 			
-			if(modelObject.getNumOfRounds()==1) {
-				Random i = new Random();				
-				int n=i.nextInt(5);
-				modelObject.setSelector(n);
-			}
+//			if(modelObject.getNumOfRounds()==1) {
+//				Random i = new Random();				
+//				int n=i.nextInt(5);
+//				modelObject.setSelector(n);
+//			}
 			
 			int indexOfCategory=modelObject.selectPhase();
 			if(indexOfCategory==-1) {
