@@ -7,9 +7,11 @@ import java.util.Random;
 public class TopTrumpController {
 	private TopTrumpModel modelObject;
 	private TopTrumpView viewObject;
-	public TopTrumpController(TopTrumpModel model,TopTrumpView view) {
+	private TopTrumpJDBC jdbcObject;
+	public TopTrumpController(TopTrumpModel model,TopTrumpView view,TopTrumpJDBC jdbc) {
 		modelObject=model;
 		viewObject=view;
+		jdbcObject=jdbc;
 	}
 	
 	public void selectMenu(int choice) {
@@ -17,10 +19,21 @@ public class TopTrumpController {
 		//	viewObject.
 		//}
 	}
-	
-	public void game() throws IOException {
-		
+	public void gameStatus() throws Exception{
+		int s1=jdbcObject.lastGidbefore();
+		int s2=jdbcObject.numOfHumanWins();
+		int s3=jdbcObject.numOfAIWins();
+		double s4=jdbcObject.aveDraw();
+		int s5=jdbcObject.largeRounds();
+		viewObject.printGameStatus(s1,s2,s3,s4,s5);
+	}
+	public void game() throws Exception {
+		int lastgid=jdbcObject.lastGidbefore();
+		int lastpid=jdbcObject.lastPidbefore()+1;
 		modelObject.loadPlayer();
+		for(int i=0;i<5;i++) {
+			jdbcObject.insertPlayerDetail(i+lastpid, modelObject.getPlayer()[i].getName(), modelObject.getPlayer()[i].getType());
+		}
 		modelObject.setNumOfRounds(0);
 		
 		while(!modelObject.gameIsOver()) {
@@ -31,11 +44,11 @@ public class TopTrumpController {
 			viewObject.printDrawCard();
 			
 			
-			if(modelObject.getNumOfRounds()==1) {
-				Random i = new Random();				
-				int n=i.nextInt(5);
-				modelObject.setSelector(n);
-			}
+//			if(modelObject.getNumOfRounds()==1) {
+//				Random i = new Random();				
+//				int n=i.nextInt(5);
+//				modelObject.setSelector(n);
+//			}
 			
 			int indexOfCategory=modelObject.selectPhase();
 			if(indexOfCategory==-1) {
@@ -52,6 +65,9 @@ public class TopTrumpController {
 			modelObject.judgePhase();
 			viewObject.printResult();
 		}
-
+		jdbcObject.insertGameResult(lastgid+1, modelObject.getNumOfRounds(), modelObject.getNumOfDraws(), modelObject.roundWinner());
+		for(int i=0;i<5;i++) {
+			jdbcObject.insertPlayerResult(lastgid+1, i+lastpid, modelObject.getPlayer()[i].getRoundWin());
+		}
 	}
 }

@@ -13,11 +13,7 @@ public class TopTrumpModel {
 	private Card[] commonDeck = new Card[50];// ��Ϸƽ��ʱ�����Ĺ�����
 	private int cardsInCommonDeck = 0;
 	private Player[] player = new Player[5];
-	private int numOfGames = 0;
-	private int numOfHumanWins = 0;
-	private int numOfAIWins = 0;
-	private double aveOfdraws = 0;
-	private int longestGame = 0;// ѯ��ʱ������������
+	private int numOfDraws = 0;
 	private int numOfRounds = 0;// �غ���
 	private Card winnerCard;
 	private int indexOfCategory;
@@ -37,7 +33,18 @@ public class TopTrumpModel {
 		loadDeck(deckFile);
 
 	}
-
+	
+	public void shuffle(Card[] deck,int size) {
+		Random rd=new Random();
+		for(int i=0;i<100;i++) {
+			int i1=rd.nextInt(size);
+			int i2=rd.nextInt(size);
+			Card temp=deck[i1];
+			deck[i1]=deck[i2];
+			deck[i2]=temp;
+		}
+	}
+	
 	public void drawPhase() throws IOException {
 		for (int i = 0; i < 5; i++) {
 			if (player[i].isAlive()) {
@@ -88,15 +95,14 @@ public class TopTrumpModel {
 
 	public int selectPhase() throws IOException {
 		if (numOfRounds == 1) {
-			Random i = new Random();
-			int n = i.nextInt(5);
+			Random rd = new Random();
+			int n = rd.nextInt(5);
 			selector = n;
 		}
 
 		if (selector == 0)
 			return -1;
-		Random rd = new Random();
-		int categoryNo = rd.nextInt(5) + 1;
+		int categoryNo = player[selector].getGreatCate();
 
 		/*
 		 * log the selector, selected category and value (human player's log code will
@@ -118,11 +124,15 @@ public class TopTrumpModel {
 	public void judgePhase() throws IOException {
 		int winner = roundWinner();
 		if (winner > -1) {
+			player[winner].win();
+			shuffle(commonDeck,cardsInCommonDeck);
 			for (int i = 0; i < cardsInCommonDeck; i++) {
 				player[winner].gainCard(commonDeck[i]);
 			}
 			cardsInCommonDeck = 0;
 			selector = winner;
+		}else {
+			numOfDraws++;
 		}
 
 		// check the remaining cards in communal pile
@@ -217,6 +227,7 @@ public class TopTrumpModel {
 				}
 				gameDeck[cardNumber++] = new Card(line[0], category);
 			}
+			shuffle(gameDeck,numOfCards);
 			input.close();
 			
 			//write card load logs
@@ -357,26 +368,6 @@ public class TopTrumpModel {
 		return player;
 	}
 
-	public int getNumOfGames() {
-		return numOfGames;
-	}
-
-	public int getNumOfHumanWins() {
-		return numOfHumanWins;
-	}
-
-	public int getNumOfAIWins() {
-		return numOfAIWins;
-	}
-
-	public double getAveOfdraws() {
-		return aveOfdraws;
-	}
-
-	public int getLongestGame() {
-		return longestGame;
-	}
-
 	public void setNumOfRounds(int numOfRounds) {
 		this.numOfRounds = numOfRounds;
 	}
@@ -393,4 +384,12 @@ public class TopTrumpModel {
 		return writeLogsToFile;
 	}
 
+	public int getNumOfDraws() {
+		return numOfDraws;
+	}
+
+	public void setNumOfDraws(int numOfDraws) {
+		this.numOfDraws = numOfDraws;
+	}
+	
 }

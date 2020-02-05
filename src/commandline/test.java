@@ -8,11 +8,13 @@ public class test {
 		TopTrumpJDBC jdbc=new TopTrumpJDBC(model);
 		//jdbc.create();
 		TopTrumpView view=new TopTrumpView(model);
-		TopTrumpController controller=new TopTrumpController(model,view);
+		TopTrumpController controller=new TopTrumpController(model,view,jdbc);
 		view.setPrintstream(System.out);
 		view.setSc(new Scanner(System.in));
 		controller.game();
-		model.printDeck();
+		controller.gameStatus();
+		
+		//model.printDeck();
 		view.closeSc();
 	}
 }

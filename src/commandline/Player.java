@@ -6,14 +6,32 @@ public class Player {
 	private Card[] deck;// player's card deck
 	private Card handCard;// the first card of the player's card deck
 	private int numOfCards;
-
+	private int roundWin=0;
+	
 	public Player(String name, int type) {// constructor
 		this.name = name;
 		this.type = type;
 		deck = new Card[50];
 		numOfCards = 0;
 	}
-
+	public void win() {
+		roundWin++;
+	}
+	public int getRoundWin() {
+		return roundWin;
+	}
+	public int getGreatCate() {
+		int res=1;
+		int max=0;
+		for(int i=1;i<=5;i++) {
+			if(handCard.getCategory()[i]>max) {
+				max=handCard.getCategory()[i];
+				res=i;
+			}
+		}
+		return res;
+	}
+	
 	public boolean isAlive() {// check the status of the player:lose or not
 		return numOfCards > 0;
 	}

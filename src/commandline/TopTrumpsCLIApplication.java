@@ -28,14 +28,14 @@ public class TopTrumpsCLIApplication {
 			// ----------------------------------------------------
 			// Add your game logic here based on the requirements
 			// ----------------------------------------------------
-			TopTrumpModel model=new TopTrumpModel(writeGameLogsToFile);
-			TopTrumpView view=new TopTrumpView(model);
-			TopTrumpController controller=new TopTrumpController(model,view);
-			view.setPrintstream(System.out);
-			view.setSc(new Scanner(System.in));
-			controller.game();
-			model.printDeck();
-			view.closeSc();
+//			TopTrumpModel model=new TopTrumpModel(writeGameLogsToFile);
+//			TopTrumpView view=new TopTrumpView(model);
+//			TopTrumpController controller=new TopTrumpController(model,view.jd);
+//			view.setPrintstream(System.out);
+//			view.setSc(new Scanner(System.in));
+//			controller.game();
+//			model.printDeck();
+//			view.closeSc();
 			userWantsToQuit=true; // use this when the user wants to exit the game
 			
 		}

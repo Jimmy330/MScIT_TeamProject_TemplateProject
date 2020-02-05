@@ -97,12 +97,12 @@ public class TopTrumpView {
 		}
 	}
 
-	public void printGameStatus() {
+	public void printGameStatus(int numofgame, int numofhumanwin, int numofaiwin, double avedraw, int largeround) {
 		printstream.printf("Game Statistics:\r\n" + 
 				"   Number of Games: %d\r\n" + 
 				"   Number of Human Wins: %d\r\n" + 
 				"   Number of AI Wins: %d\r\n" + 
-				"   Average number of Draws: &f\r\n" + 
-				"   Longest Game: %d", modelObject.getNumOfGames(),modelObject.getNumOfHumanWins(),modelObject.getNumOfAIWins(),modelObject.getAveOfdraws(),modelObject.getLongestGame());
+				"   Average number of Draws: %.3f\r\n" + 
+				"   Longest Game: %d",numofgame,numofhumanwin,numofaiwin,avedraw,largeround);
 	}
 }
