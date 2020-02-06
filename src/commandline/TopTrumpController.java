@@ -1,6 +1,7 @@
 package commandline;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
@@ -8,10 +9,13 @@ public class TopTrumpController {
 	private TopTrumpModel modelObject;
 	private TopTrumpView viewObject;
 	private TopTrumpJDBC jdbcObject;
-	public TopTrumpController(TopTrumpModel model,TopTrumpView view,TopTrumpJDBC jdbc) {
+	private TestLog log;
+	
+	public TopTrumpController(TopTrumpModel model,TopTrumpView view,TopTrumpJDBC jdbc,TestLog log) {
 		modelObject=model;
 		viewObject=view;
 		jdbcObject=jdbc;
+		this.log=log;
 	}
 	
 	public void selectMenu(int choice) {
@@ -30,15 +34,28 @@ public class TopTrumpController {
 	public void game() throws Exception {
 		int lastgid=jdbcObject.lastGidbefore();
 		int lastpid=jdbcObject.lastPidbefore()+1;
+		
+		File deckFile = new File("StarCitizenDeck.txt");
+		modelObject.loadDeck(deckFile);		
+		log.loadCardLog();
+		
+		modelObject.shuffle(modelObject.getGameDeck(), TopTrumpModel.getNumofcards());		
+		log.loadCardLog();
+		
 		modelObject.loadPlayer();
+		log.loadPlayerCardLog();
+		
 		for(int i=0;i<5;i++) {
 			jdbcObject.insertPlayerDetail(i+lastpid, modelObject.getPlayer()[i].getName(), modelObject.getPlayer()[i].getType());
 		}
-		modelObject.setNumOfRounds(0);
+		modelObject.setNumOfRounds(0);	
+		
 		
 		while(!modelObject.gameIsOver()) {
 			modelObject.setNumOfRounds(modelObject.getNumOfRounds()+1);
-			modelObject.drawPhase();
+			
+			modelObject.drawPhase();			
+			log.currentCardLog();
 			
 			viewObject.printRoundTitle();
 			viewObject.printDrawCard();
@@ -54,17 +71,16 @@ public class TopTrumpController {
 			if(indexOfCategory==-1) {
 				viewObject.printSelectCategory();
 				indexOfCategory=viewObject.scanInt();
-				
-				// write logs of human players' category selection
-				if(modelObject.getWriteLogsToFile()) {
-				String selectionLog = "You selected " + Card.getCategoryName()[indexOfCategory] + " "
-						+ modelObject.getPlayer()[0].getHand().getCategory()[indexOfCategory];
-				modelObject.writeLog(selectionLog);}
 			}
-			modelObject.setIndexOfCategory(indexOfCategory);
+			modelObject.setIndexOfCategory(indexOfCategory);			
+			log.selectionLog(indexOfCategory);
 			modelObject.judgePhase();
 			viewObject.printResult();
+			log.communalPileLog();
+			log.loadPlayerCardLog();
+			
 		}
+		log.gameWinnerLog();
 		jdbcObject.insertGameResult(lastgid+1, modelObject.getNumOfRounds(), modelObject.getNumOfDraws(), modelObject.roundWinner());
 		for(int i=0;i<5;i++) {
 			jdbcObject.insertPlayerResult(lastgid+1, i+lastpid, modelObject.getPlayer()[i].getRoundWin());

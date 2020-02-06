@@ -3,7 +3,6 @@ package commandline;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,19 +17,13 @@ public class TopTrumpModel {
 	private Card winnerCard;
 	private int indexOfCategory;
 	private int selector;
-	private String testLog = "";
-	private FileWriter writer;
-	private File testLogFile =new File("testlog.log");
-	private Boolean writeLogsToFile=false;
+	private Player gameWinner;
 
-	public TopTrumpModel(Boolean writeLogsToFile) throws IOException {
-		this.writeLogsToFile=writeLogsToFile;
-		if(writeLogsToFile) {
-		testLogFile = new File("testlog.log");
-		testLogFile.createNewFile();}
 
-		File deckFile = new File("StarCitizenDeck.txt");
-		loadDeck(deckFile);
+	public TopTrumpModel(Boolean writeLogsToFile) {
+
+//		File deckFile = new File("StarCitizenDeck.txt");
+//		loadDeck(deckFile);
 
 	}
 	
@@ -53,71 +46,18 @@ public class TopTrumpModel {
 			}
 		}
 
-		// log current cards in play
-		if(writeLogsToFile) {
-		String currentCard = "Curret cards in play\n";
-
-		for (int i = 0; i < player.length; i++) {
-			if(player[i].isAlive()) {
-			currentCard += player[i].getName() + "\n";
-			String[] firstline = Card.getCategoryName();
-
-			for (int n = 0; n < 6; n++) {
-				currentCard += firstline[n] + " ";
-			}
-			currentCard += "\n";
-
-			String str = "";
-			str += player[i].getHand().getName() + Arrays.toString(player[i].getHand().getCategory()) + "\n";
-			currentCard += str + "\n";
-			}
-		}
-		writeLog(currentCard);
-
-		// common deck log
-		String commonDeckStr = "Draw cards to common deck\n";
-		String[] firstline = Card.getCategoryName();
-		for (int i = 0; i < 6; i++) {
-			commonDeckStr += firstline[i] + " ";
-		}
-		commonDeckStr += "\n";
-		for (int i = 0; i < cardsInCommonDeck; i++) {
-			String name = commonDeck[i].getName();
-			int[] category = commonDeck[i].getCategory();
-			commonDeckStr += name + " ";
-			for (int j = 1; j < 6; j++) {
-				commonDeckStr += category[j] + " ";
-			}
-			commonDeckStr += "\n";
-		}
-		writeLog(commonDeckStr);}
 	}
 
-	public int selectPhase() throws IOException {
-		if (numOfRounds == 1) {
-			Random rd = new Random();
-			int n = rd.nextInt(5);
-			selector = n;
-		}
+	public int selectPhase() {
+//		if (numOfRounds == 1) {
+//			Random rd = new Random();
+//			int n = rd.nextInt(5);
+//			selector = n;
+//		}
 
 		if (selector == 0)
 			return -1;
-		int categoryNo = player[selector].getGreatCate();
-
-		/*
-		 * log the selector, selected category and value (human player's log code will
-		 * be in controller.class)
-		 */
-		
-		if(writeLogsToFile) {
-
-		String selectionLog = player[selector].getName();
-		
-		selectionLog += " selected " + Card.getCategoryName()[categoryNo] + " "
-				+ player[selector].getHand().getCategory()[categoryNo];
-		writeLog(selectionLog);}
-
-		return (categoryNo);
+		return player[selector].getGreatCate();
 
 	}
 
@@ -134,46 +74,6 @@ public class TopTrumpModel {
 		}else {
 			numOfDraws++;
 		}
-
-		// check the remaining cards in communal pile
-		if(writeLogsToFile) {
-		String commonDeckStr = "Remaining cards in common deck\n";
-		String[] headLine = Card.getCategoryName();
-		for (int i = 0; i < 6; i++) {
-			commonDeckStr += headLine[i] + " ";
-		}
-		commonDeckStr += "\n";
-		for (int i = 0; i < cardsInCommonDeck; i++) {
-			String name = commonDeck[i].getName();
-			int[] category = commonDeck[i].getCategory();
-			commonDeckStr += name + " ";
-			for (int j = 1; j < 6; j++) {
-				commonDeckStr += category[j] + " ";
-			}
-			commonDeckStr += "\n";
-		}
-		writeLog(commonDeckStr);
-		
-		// log each player's deck when a round is over
-
-		String roundOver = "End of Round " + numOfRounds + "\n";
-
-		for (int i = 0; i < player.length; i++) {
-			roundOver += player[i].getName() + "\n";
-			String[] firstline = Card.getCategoryName();
-			for (int n = 0; n < 6; n++) {
-				roundOver += firstline[n] + " ";
-			}
-			roundOver += "\n";
-
-			String str = "";
-			for (int j = 0; j < player[i].getNumOfCards(); j++) {
-				str += player[i].getDeck()[j].getName() + Arrays.toString(player[i].getDeck()[j].getCategory()) + "\n";
-			}
-			roundOver += str + "\n";
-		}
-		writeLog(roundOver);}
-
 	}
 
 	public Card winnerCard() {
@@ -227,29 +127,9 @@ public class TopTrumpModel {
 				}
 				gameDeck[cardNumber++] = new Card(line[0], category);
 			}
-			shuffle(gameDeck,numOfCards);
+//			shuffle(gameDeck,numOfCards);
 			input.close();
 			
-			//write card load logs
-			
-			if(writeLogsToFile) {
-			String cardDeck = "Load complete card deck\n";
-			String[] firstline = Card.getCategoryName();
-			for (int i = 0; i < 6; i++) {
-				cardDeck += firstline[i] + " ";
-			}
-			cardDeck += "\n";
-			for (int i = 0; i < numOfCards; i++) {
-				String name = gameDeck[i].getName();
-				int[] category = gameDeck[i].getCategory();
-				cardDeck += name + " ";
-				for (int j = 1; j < 6; j++) {
-					cardDeck += category[j] + " ";
-				}
-				cardDeck += "\n";
-			}
-			writeLog(cardDeck);}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -267,30 +147,9 @@ public class TopTrumpModel {
 			if (index > 4)
 				index = 0;
 		}
-
-		// log card deck of each player after cards divided
-		if(writeLogsToFile) {
-		String playerLoad = "Allocate cards to players\n";
-
-		for (int i = 0; i < player.length; i++) {
-			playerLoad += player[i].getName() + "\n";
-			String[] firstline = Card.getCategoryName();
-			for (int n = 0; n < 6; n++) {
-				playerLoad += firstline[n] + " ";
-			}
-			playerLoad += "\n";
-
-			String str = "";
-			for (int j = 0; j < player[i].getNumOfCards(); j++) {
-				str += player[i].getDeck()[j].getName() + Arrays.toString(player[i].getDeck()[j].getCategory()) + "\n";
-			}
-			playerLoad += str + "\n";
-		}
-		writeLog(playerLoad);}
-
 	}
 
-	public boolean gameIsOver() throws IOException {
+	public boolean gameIsOver() {
 		int surviver = 0;
 		Player gameWinner = null;
 		for (int i = 0; i < 5; i++) {
@@ -299,46 +158,34 @@ public class TopTrumpModel {
 				gameWinner=player[i];
 			}				
 		}
-		boolean gameOver = surviver == 1;
-		
-		//log the winner of the game
-		if(writeLogsToFile) {
-		if(gameOver) writeLog("Game Winner is "+gameWinner.getName());}
-		
-		return gameOver;
+		this.gameWinner=gameWinner;
+
+		return surviver == 1;
 	}
 
 	public void printDeck() {
 		String[] firstline = Card.getCategoryName();
 		for (int i = 0; i < 6; i++) {
 			System.out.printf("%s\t", firstline[i]);
-			testLog += firstline[i] + " ";
+//			testLog += firstline[i] + " ";
 		}
 		System.out.println();
 
-		testLog = testLog + "\n";
-		for (int i = 0; i < numOfCards; i++) {
-			String name = gameDeck[i].getName();
-			int[] category = gameDeck[i].getCategory();
-			System.out.printf("%s\t", name);
-			testLog = testLog + name;
-			for (int j = 1; j < 6; j++) {
-				System.out.printf("%d\t", category[j]);
-			}
-			System.out.println();
-			testLog = testLog + "\n";
-			System.out.println(testLog);
-		}
+//		testLog = testLog + "\n";
+//		for (int i = 0; i < numOfCards; i++) {
+//			String name = gameDeck[i].getName();
+//			int[] category = gameDeck[i].getCategory();
+//			System.out.printf("%s\t", name);
+//			testLog = testLog + name;
+//			for (int j = 1; j < 6; j++) {
+//				System.out.printf("%d\t", category[j]);
+//			}
+//			System.out.println();
+//			testLog = testLog + "\n";
+//			System.out.println(testLog);
+//		}
 	}
 
-	public void writeLog(String str) throws IOException {
-		testLog += str + "\n----\n";
-		writer = new FileWriter(testLogFile);
-		writer.write(testLog);
-		writer.flush();
-		writer.close();
-
-	}
 
 	public int getIndexOfCategory() {
 		return indexOfCategory;
@@ -380,9 +227,9 @@ public class TopTrumpModel {
 		this.selector = selector;
 	}
 
-	public Boolean getWriteLogsToFile() {
-		return writeLogsToFile;
-	}
+//	public Boolean getWriteLogsToFile() {
+//		return writeLogsToFile;
+//	}
 
 	public int getNumOfDraws() {
 		return numOfDraws;
@@ -391,5 +238,23 @@ public class TopTrumpModel {
 	public void setNumOfDraws(int numOfDraws) {
 		this.numOfDraws = numOfDraws;
 	}
+
+	public static int getNumofcards() {
+		return numOfCards;
+	}
+
+	public Card[] getGameDeck() {
+		return gameDeck;
+	}
+
+	public Card[] getCommonDeck() {
+		return commonDeck;
+	}
+
+	public Player getGameWinner() {
+		return gameWinner;
+	}
+	
+	
 	
 }

@@ -1,0 +1,828 @@
+Load complete card deck
+Description Size Speed Range Firepower Cargo 
+350r 1 9 2 3 0 
+Avenger 2 5 4 3 2 
+Carrack 6 2 10 4 6 
+Constellation 4 5 7 3 4 
+Hawk 1 3 2 4 0 
+Hornet 2 5 3 4 1 
+Hurricane 2 5 3 5 0 
+Idris 8 2 7 10 6 
+m50 1 10 2 2 0 
+Merchantman 7 3 5 6 8 
+Orion 10 1 6 2 9 
+Sabre 2 7 2 5 0 
+Vanguard 3 4 5 5 2 
+350r 1 9 2 3 0 
+Avenger 2 5 4 3 2 
+Carrack 6 2 10 4 6 
+Constellation 4 5 7 3 4 
+Hawk 1 3 2 4 0 
+Hornet 2 5 3 4 1 
+Hurricane 2 5 3 5 0 
+Idris 8 2 7 10 6 
+m50 1 10 2 2 0 
+Merchantman 7 3 5 6 8 
+Orion 10 1 6 2 9 
+Sabre 2 7 2 5 0 
+Vanguard 3 4 5 5 2 
+350r 1 9 2 3 0 
+Avenger 2 5 4 3 2 
+Carrack 6 2 10 4 6 
+Constellation 4 5 7 3 4 
+Hawk 1 3 2 4 0 
+Hornet 2 5 3 4 1 
+Hurricane 2 5 3 5 0 
+Idris 8 2 7 10 6 
+m50 1 10 2 2 0 
+Merchantman 7 3 5 6 8 
+Orion 10 1 6 2 9 
+Sabre 2 7 2 5 0 
+Vanguard 3 4 5 5 2 
+Avenger 2 5 4 3 2 
+
+-----------------------------------------
+Load complete card deck
+Description Size Speed Range Firepower Cargo 
+Hurricane 2 5 3 5 0 
+Constellation 4 5 7 3 4 
+Constellation 4 5 7 3 4 
+350r 1 9 2 3 0 
+Orion 10 1 6 2 9 
+Sabre 2 7 2 5 0 
+Carrack 6 2 10 4 6 
+Hawk 1 3 2 4 0 
+Idris 8 2 7 10 6 
+Idris 8 2 7 10 6 
+Avenger 2 5 4 3 2 
+Avenger 2 5 4 3 2 
+Merchantman 7 3 5 6 8 
+Sabre 2 7 2 5 0 
+Hurricane 2 5 3 5 0 
+Vanguard 3 4 5 5 2 
+m50 1 10 2 2 0 
+Orion 10 1 6 2 9 
+Constellation 4 5 7 3 4 
+Avenger 2 5 4 3 2 
+Carrack 6 2 10 4 6 
+Merchantman 7 3 5 6 8 
+Orion 10 1 6 2 9 
+Vanguard 3 4 5 5 2 
+350r 1 9 2 3 0 
+Sabre 2 7 2 5 0 
+Idris 8 2 7 10 6 
+m50 1 10 2 2 0 
+Merchantman 7 3 5 6 8 
+Hornet 2 5 3 4 1 
+350r 1 9 2 3 0 
+Avenger 2 5 4 3 2 
+Carrack 6 2 10 4 6 
+Vanguard 3 4 5 5 2 
+Hornet 2 5 3 4 1 
+m50 1 10 2 2 0 
+Hawk 1 3 2 4 0 
+Hornet 2 5 3 4 1 
+Hawk 1 3 2 4 0 
+Hurricane 2 5 3 5 0 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Hurricane[0, 2, 5, 3, 5, 0]
+Sabre[0, 2, 7, 2, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Vanguard[0, 3, 4, 5, 5, 2]
+Carrack[0, 6, 2, 10, 4, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+Carrack[0, 6, 2, 10, 4, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+m50[0, 1, 10, 2, 2, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+Hawk[0, 1, 3, 2, 4, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Orion[0, 10, 1, 6, 2, 9]
+Orion[0, 10, 1, 6, 2, 9]
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+Constellation[0, 4, 5, 7, 3, 4]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 1 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Hurricane[0, 2, 5, 3, 5, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+
+
+-----------------------------------------
+You selected Range 3
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+Hurricane 2 5 3 5 0 
+Constellation 4 5 7 3 4 
+Constellation 4 5 7 3 4 
+350r 1 9 2 3 0 
+Orion 10 1 6 2 9 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Vanguard[0, 3, 4, 5, 5, 2]
+Carrack[0, 6, 2, 10, 4, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+m50[0, 1, 10, 2, 2, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Hawk[0, 1, 3, 2, 4, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Orion[0, 10, 1, 6, 2, 9]
+Orion[0, 10, 1, 6, 2, 9]
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+Constellation[0, 4, 5, 7, 3, 4]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 2 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+
+
+-----------------------------------------
+You selected Firepower 5
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+Hurricane 2 5 3 5 0 
+Constellation 4 5 7 3 4 
+Constellation 4 5 7 3 4 
+350r 1 9 2 3 0 
+Orion 10 1 6 2 9 
+Sabre 2 7 2 5 0 
+Carrack 6 2 10 4 6 
+Hawk 1 3 2 4 0 
+Idris 8 2 7 10 6 
+Idris 8 2 7 10 6 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+Vanguard[0, 3, 4, 5, 5, 2]
+Carrack[0, 6, 2, 10, 4, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+m50[0, 1, 10, 2, 2, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+Orion[0, 10, 1, 6, 2, 9]
+Orion[0, 10, 1, 6, 2, 9]
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+Constellation[0, 4, 5, 7, 3, 4]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 3 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+You selected Cargo 2
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+Carrack[0, 6, 2, 10, 4, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+m50[0, 1, 10, 2, 2, 0]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+Orion[0, 10, 1, 6, 2, 9]
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 4 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Constellation[0, 4, 5, 7, 3, 4]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+
+
+-----------------------------------------
+AI Player 2 selected Size 10
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+m50[0, 1, 10, 2, 2, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Constellation[0, 4, 5, 7, 3, 4]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 5 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Orion[0, 10, 1, 6, 2, 9]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+
+
+-----------------------------------------
+AI Player 2 selected Size 10
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+m50[0, 1, 10, 2, 2, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+m50[0, 1, 10, 2, 2, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Constellation[0, 4, 5, 7, 3, 4]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Carrack[0, 6, 2, 10, 4, 6]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 6 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+Sabre[0, 2, 7, 2, 5, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Merchantman[0, 7, 3, 5, 6, 8]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+
+
+-----------------------------------------
+AI Player 2 selected Speed 10
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+m50[0, 1, 10, 2, 2, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Constellation[0, 4, 5, 7, 3, 4]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Carrack[0, 6, 2, 10, 4, 6]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Sabre[0, 2, 7, 2, 5, 0]
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 7 Current cards in play
+You
+Description Size Speed Range Firepower Cargo 
+350r[0, 1, 9, 2, 3, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Avenger[0, 2, 5, 4, 3, 2]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Carrack[0, 6, 2, 10, 4, 6]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Vanguard[0, 3, 4, 5, 5, 2]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+
+
+-----------------------------------------
+AI Player 2 selected Range 10
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+m50[0, 1, 10, 2, 2, 0]
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+m50[0, 1, 10, 2, 2, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Constellation[0, 4, 5, 7, 3, 4]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Carrack[0, 6, 2, 10, 4, 6]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Sabre[0, 2, 7, 2, 5, 0]
+m50[0, 1, 10, 2, 2, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Vanguard[0, 3, 4, 5, 5, 2]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+Hawk[0, 1, 3, 2, 4, 0]
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+Hurricane[0, 2, 5, 3, 5, 0]
+
+
+-----------------------------------------
+Round 8 Current cards in play
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Hornet[0, 2, 5, 3, 4, 1]
+
+
+-----------------------------------------
+AI Player 2 selected Speed 5
+-----------------------------------------
+Remaining cards in common deck
+Description Size Speed Range Firepower Cargo 
+
+-----------------------------------------
+Each player's card deck
+You
+Description Size Speed Range Firepower Cargo 
+
+AI Player 1
+Description Size Speed Range Firepower Cargo 
+
+AI Player 2
+Description Size Speed Range Firepower Cargo 
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Idris[0, 8, 2, 7, 10, 6]
+Hurricane[0, 2, 5, 3, 5, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Hawk[0, 1, 3, 2, 4, 0]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Constellation[0, 4, 5, 7, 3, 4]
+Avenger[0, 2, 5, 4, 3, 2]
+Sabre[0, 2, 7, 2, 5, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Constellation[0, 4, 5, 7, 3, 4]
+Merchantman[0, 7, 3, 5, 6, 8]
+m50[0, 1, 10, 2, 2, 0]
+Avenger[0, 2, 5, 4, 3, 2]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Constellation[0, 4, 5, 7, 3, 4]
+350r[0, 1, 9, 2, 3, 0]
+Orion[0, 10, 1, 6, 2, 9]
+Vanguard[0, 3, 4, 5, 5, 2]
+Merchantman[0, 7, 3, 5, 6, 8]
+Carrack[0, 6, 2, 10, 4, 6]
+Merchantman[0, 7, 3, 5, 6, 8]
+Idris[0, 8, 2, 7, 10, 6]
+Hornet[0, 2, 5, 3, 4, 1]
+Sabre[0, 2, 7, 2, 5, 0]
+m50[0, 1, 10, 2, 2, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Avenger[0, 2, 5, 4, 3, 2]
+350r[0, 1, 9, 2, 3, 0]
+Carrack[0, 6, 2, 10, 4, 6]
+Vanguard[0, 3, 4, 5, 5, 2]
+Hawk[0, 1, 3, 2, 4, 0]
+Hornet[0, 2, 5, 3, 4, 1]
+Hawk[0, 1, 3, 2, 4, 0]
+m50[0, 1, 10, 2, 2, 0]
+Hurricane[0, 2, 5, 3, 5, 0]
+
+AI Player 3
+Description Size Speed Range Firepower Cargo 
+
+AI Player 4
+Description Size Speed Range Firepower Cargo 
+
+
+-----------------------------------------
+Game Winner is AI Player 2
+-----------------------------------------
