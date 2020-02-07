@@ -1,10 +1,6 @@
 package commandline;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
-
 public class TopTrumpController {
 	private TopTrumpModel modelObject;
 	private TopTrumpView viewObject;
@@ -35,8 +31,7 @@ public class TopTrumpController {
 		int lastgid=jdbcObject.lastGidbefore();
 		int lastpid=jdbcObject.lastPidbefore()+1;
 		
-		File deckFile = new File("StarCitizenDeck.txt");
-		modelObject.loadDeck(deckFile);		
+
 		log.loadCardLog();
 		
 		modelObject.shuffle(modelObject.getGameDeck(), TopTrumpModel.getNumofcards());		
@@ -61,11 +56,11 @@ public class TopTrumpController {
 			viewObject.printDrawCard();
 			
 			
-//			if(modelObject.getNumOfRounds()==1) {
-//				Random i = new Random();				
-//				int n=i.nextInt(5);
-//				modelObject.setSelector(n);
-//			}
+			// if(modelObject.getNumOfRounds()==1) {
+			// 	Random i = new Random();				
+			// 	int n=i.nextInt(5);
+			// 	modelObject.setSelector(n);
+			// }
 			
 			int indexOfCategory=modelObject.selectPhase();
 			if(indexOfCategory==-1) {

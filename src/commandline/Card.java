@@ -1,14 +1,14 @@
 package commandline;
 
 public class Card {
-	private static String[] categoryName;
+	public static String[] categoryName;
 	private String name;
 	private int[] category;
 	public Card(String name, int[] category) {//constructor
 		this.name=name;
 		this.category=category;
 	}
-	public String getName() {//Ò»¶ÑÓÎÏ·ÖÐÒªÓÃµÄgettersºÍsetters
+	public String getName() {//Ò»ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½Òªï¿½Ãµï¿½gettersï¿½ï¿½setters
 		return name;
 	}
 	public int[] getCategory() {

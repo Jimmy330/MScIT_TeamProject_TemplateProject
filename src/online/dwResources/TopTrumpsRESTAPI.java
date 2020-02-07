@@ -1,8 +1,8 @@
 package online.dwResources;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -18,14 +18,9 @@ import online.configuration.TopTrumpsJSONConfiguration;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import com.fasterxml.jackson.databind.util.JSONPObject;
-
 import commandline.Card;
-import commandline.TopTrumpController;
+import commandline.Player;
 import commandline.TopTrumpModel;
-import commandline.TopTrumpView;
-import commandline.test;
-import netscape.javascript.JSObject;
 
 @Path("/toptrumps") // Resources specified here should be hosted at http://localhost:7777/toptrumps
 @Produces(MediaType.APPLICATION_JSON) // This resource returns JSON content
@@ -57,106 +52,136 @@ public class TopTrumpsRESTAPI {
 	 */
 	private TopTrumpModel model;
 	private int num;
+	private File deckFile;
 
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws IOException {
 		// ----------------------------------------------------
 		// Add relevant initalization here
 		// ----------------------------------------------------
 		num = conf.getNumAIPlayers();
-		model = new TopTrumpModel(false);
+		deckFile = new File(conf.getDeckFile());
+
+	}
+
+	@GET
+	@Path("/initalize")
+	public String initalize() throws IOException {
+
+		model = new TopTrumpModel();
+		model.loadDeck(deckFile);
 		model.loadPlayer();
 		model.drawPhase();
-
-	}
-
-	@GET
-	@Path("/roundNo")
-	public String getRoundNo() {
-		return Integer.toString(model.getNumOfRounds()+1);
-	}
-
-//	@GET
-//	@Path("/nextRound")
-//	public String nextRound() {
-//		
-//	}
-
-	// @GET
-	// @Path("/selector")
-	// public String getSelector() {
-	// 	return model.getPlayer()[model.getSelector()].getName();
-	// }
-
-	@GET
-	@Path("/select")
-	public String selectCategory() throws IOException {
-		
-		String category = Card.getCategoryName()[model.getSelector()];
-		String selector = model.getPlayer()[model.getSelector()].getName();
-		
-
-		List<String> list = new ArrayList<>();
-		list.add(selector);
-		list.add(category);
-
-		return oWriter.writeValueAsString(list);
-
-	}
-
-	@GET
-	@Path("/roundWinner")
-	public String getRoundWinner() {
-		try {
-			model.judgePhase();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return model.getPlayer()[model.roundWinner()].getName();
+		return card();
 	}
 
 	@GET
 	@Path("/card")
 	public String card() throws IOException {
-		// TopTrumpModel model = new TopTrumpModel(false);
 
-		String[][] test = new String[10][10];
+		ArrayList<Player> playerInfo = new ArrayList<Player>();
 
-		for (int i = 0; i < num + 1; i++) {
-			test[i][0] = model.getPlayer()[i].getName();
-			test[i][1] = Integer.toString(model.getPlayer()[i].getNumOfCards());
-			test[i][2] = model.getPlayer()[i].getHand().getName();
-			test[i][3] = Integer.toString(model.getPlayer()[i].getHand().getCategory()[0]);
-			test[i][4] = Integer.toString(model.getPlayer()[i].getHand().getCategory()[1]);
-			test[i][5] = Integer.toString(model.getPlayer()[i].getHand().getCategory()[2]);
-			test[i][6] = Integer.toString(model.getPlayer()[i].getHand().getCategory()[3]);
-			test[i][7] = Integer.toString(model.getPlayer()[i].getHand().getCategory()[4]);
-
-//			 for(int j =3; j<model.getPlayer()[i].getNumOfCards()+3;j++){
-//				 test[i][j]=Integer.toString(model.getPlayer()[i].getHand().getCategory()[j-3]);
-//
-//			 };
-
+		for (int i = 0; i <= num; i++) {
+			if(model.getPlayer()[i].isAlive())
+			playerInfo.add(model.getPlayer()[i]);
 		}
-		;
-
-		// List<String> listOfWords = new ArrayList<String>();
-		// listOfWords.add(playerName);
-		// listOfWords.add(numOfCards);
-		// listOfWords.add(categorySize);
-		// listOfWords.add(categorySpeed);
-		// listOfWords.add(categoryRange);
-		// listOfWords.add(categoryFirepower);
-		// listOfWords.add(categoryCargo);
-
-		String list = oWriter.writeValueAsString(test);
-
-		// String list= oWriter.writeValueAsString(listOfWords);
-
-		// ObjectMapper map=new ObjectMapper();
-		// String list = map.writeValueAsString(card);
+		String list = oWriter.writeValueAsString(playerInfo);
 		return list;
 	}
+
+	@GET
+	@Path("/roundNo")
+	public String getRoundNo() {
+		return Integer.toString(model.getNumOfRounds() + 1);
+	}
+
+	@GET
+	@Path("commondeck")
+	public String getCommonDeck() throws JsonProcessingException {
+		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
+	}
+
+
+	@GET
+	@Path("/category")
+	public String category(@QueryParam("value") int category) throws IOException {
+		model.setIndexOfCategory(category);
+
+		HashMap<String, String> selectorInfo = new HashMap<String, String>();
+		Player selector = model.getPlayer()[model.getSelector()];
+		String categoryName = Card.categoryName[category];
+
+		selectorInfo.put("name", selector.getName());
+		selectorInfo.put("type", Integer.toString(selector.getType()));
+		selectorInfo.put("category", categoryName);
+
+		return oWriter.writeValueAsString(selectorInfo);
+
+		// return selectCategory();
+	}
+
+	@GET
+	@Path("/selector")
+	public String selector() throws IOException {
+
+		int indexOfCategory = model.selectPhase();
+
+		HashMap<String, String> selectorInfo = new HashMap<String, String>();
+		Player selector = model.getPlayer()[model.getSelector()];
+		String categoryName = Card.categoryName[indexOfCategory + 1];
+
+		selectorInfo.put("name", selector.getName());
+		selectorInfo.put("type", Integer.toString(selector.getType()));
+		selectorInfo.put("category", categoryName);
+
+		return oWriter.writeValueAsString(selectorInfo);
+
+	}
+
+	@GET
+	@Path("/roundWinner")
+	public String getRoundWinner() throws IOException {
+
+		if(model.roundWinner()<0) {
+			ArrayList<String> list= new ArrayList<String>();
+			
+			String str = "Opps~! This round is a draw! \n";
+			
+			str+=model.getCardsInCommonDeck()+" cards moved into communal pile";
+
+			list.add("0");
+			list.add(str);
+			return oWriter.writeValueAsString(list);
+		}
+		return oWriter.writeValueAsString(model.getPlayer()[model.roundWinner()]);
+	}
+
+	@GET
+	@Path("/roundstart")
+	public String roundStart() throws IOException {
+		model.judgePhase();
+		model.drawPhase();
+		model.setNumOfRounds(model.getNumOfRounds()+1);
+		return selector();
+	}
+
+	@GET
+	@Path("/gamewinner")
+	public String getGameWinner() throws JsonProcessingException {
+		if(model.gameIsOver()){
+
+			HashMap<String,Integer> list = new HashMap<String,Integer>();
+			for(int i =0;i<num+1;i++){
+			int gameData= model.getPlayer()[i].getRoundWin();	
+			String playerName=model.getPlayer()[i].getName();
+			list.put(playerName, gameData);
+			
+			}
+			return oWriter.writeValueAsString(list);		
+		}
+		return oWriter.writeValueAsString(false);
+	}
+
+	
 
 	@GET
 	@Path("/helloJSONList")

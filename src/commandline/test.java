@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class test {
 	public static void main(String[] args) throws Exception{
 		boolean testLog=true;
-		TopTrumpModel model=new TopTrumpModel(true);
+		TopTrumpModel model=new TopTrumpModel();
 		TopTrumpJDBC jdbc=new TopTrumpJDBC(model);
 		//jdbc.create();
 		TopTrumpView view=new TopTrumpView(model);

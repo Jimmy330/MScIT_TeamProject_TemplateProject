@@ -1,7 +1,6 @@
 package commandline;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
@@ -20,10 +19,10 @@ public class TopTrumpModel {
 	private Player gameWinner;
 
 
-	public TopTrumpModel(Boolean writeLogsToFile) {
+	public TopTrumpModel() {
 
-//		File deckFile = new File("StarCitizenDeck.txt");
-//		loadDeck(deckFile);
+		File deckFile = new File("StarCitizenDeck.txt");
+		loadDeck(deckFile);
 
 	}
 	
@@ -38,7 +37,7 @@ public class TopTrumpModel {
 		}
 	}
 	
-	public void drawPhase() throws IOException {
+	public void drawPhase(){
 		for (int i = 0; i < 5; i++) {
 			if (player[i].isAlive()) {
 				player[i].drawCard();
@@ -49,11 +48,11 @@ public class TopTrumpModel {
 	}
 
 	public int selectPhase() {
-//		if (numOfRounds == 1) {
-//			Random rd = new Random();
-//			int n = rd.nextInt(5);
-//			selector = n;
-//		}
+		// if (numOfRounds == 1) {
+		// 	Random rd = new Random();
+		// 	int n = rd.nextInt(5);
+		// 	selector = n;
+		// }
 
 		if (selector == 0)
 			return -1;
@@ -61,7 +60,7 @@ public class TopTrumpModel {
 
 	}
 
-	public void judgePhase() throws IOException {
+	public void judgePhase() {
 		int winner = roundWinner();
 		if (winner > -1) {
 			player[winner].win();
@@ -94,22 +93,22 @@ public class TopTrumpModel {
 	}
 
 	public int roundWinner() {
-		int[] cate = new int[5];
-		int max = 0;
-		int ans = -1;
+		int[] categoryValue = new int[5];
+		int maxValue = 0;
+		int winner = -1;
 		for (int i = 0; i < 5; i++) {
 			if (!player[i].isAlive())
 				continue;
-			cate[i] = player[i].getHand().getCategory()[indexOfCategory];
-			if (cate[i] > max) {
-				max = cate[i];
-				ans = i;
+				categoryValue[i] = player[i].getHand().getCategory()[indexOfCategory];
+			if (categoryValue[i] > maxValue) {
+				maxValue = categoryValue[i];
+				winner = i;
 				winnerCard = player[i].getHand();
-			} else if (cate[i] == max) {
-				ans = -1;
+			} else if (categoryValue[i] == maxValue) {
+				winner = -1;
 			}
 		}
-		return ans;
+		return winner;
 	}
 
 	public void loadDeck(File f) {
@@ -135,7 +134,7 @@ public class TopTrumpModel {
 		}
 	}
 
-	public void loadPlayer() throws IOException {
+	public void loadPlayer(){
 		player[0] = new Player("You", 1);// �������
 		for (int i = 1; i <= 4; i++) {
 			String name = String.format("AI Player %d", i);
@@ -167,23 +166,9 @@ public class TopTrumpModel {
 		String[] firstline = Card.getCategoryName();
 		for (int i = 0; i < 6; i++) {
 			System.out.printf("%s\t", firstline[i]);
-//			testLog += firstline[i] + " ";
 		}
 		System.out.println();
 
-//		testLog = testLog + "\n";
-//		for (int i = 0; i < numOfCards; i++) {
-//			String name = gameDeck[i].getName();
-//			int[] category = gameDeck[i].getCategory();
-//			System.out.printf("%s\t", name);
-//			testLog = testLog + name;
-//			for (int j = 1; j < 6; j++) {
-//				System.out.printf("%d\t", category[j]);
-//			}
-//			System.out.println();
-//			testLog = testLog + "\n";
-//			System.out.println(testLog);
-//		}
 	}
 
 
@@ -227,9 +212,6 @@ public class TopTrumpModel {
 		this.selector = selector;
 	}
 
-//	public Boolean getWriteLogsToFile() {
-//		return writeLogsToFile;
-//	}
 
 	public int getNumOfDraws() {
 		return numOfDraws;
