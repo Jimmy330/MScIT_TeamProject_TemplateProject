@@ -4,9 +4,10 @@ public class Player {
 	private int type;// type of player: AI(0) or human(1)
 	private String name;// player's name
 	private Card[] deck;// player's card deck
-	private Card handCard;// the first card of the player's card deck
+	private Card handCard;// the top card of the player's card deck
 	private int numOfCards;
 	private int roundWin=0;
+
 	
 	public Player(String name, int type) {// constructor
 		this.name = name;
@@ -32,8 +33,10 @@ public class Player {
 		return res;
 	}
 	
+	private boolean alive = true;
 	public boolean isAlive() {// check the status of the player:lose or not
-		return numOfCards > 0;
+		// return numOfCards > 0;
+		return alive;
 	}
 
 	public void gainCard(Card c) {// add card to player's card deck bottom
@@ -51,6 +54,11 @@ public class Player {
 
 	public int getNumOfCards() {
 		return numOfCards;
+	}
+
+	public void setAlive(boolean alive){
+		this.alive=alive;
+
 	}
 
 	public void setType(int type) {

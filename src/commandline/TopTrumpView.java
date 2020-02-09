@@ -73,8 +73,9 @@ public class TopTrumpView {
 			printDraw();
 		}else {
 			printWinner();
+			printWinnerCard();
 		}
-		printWinnerCard();
+		
 	}
 	
 	public void printDraw() {

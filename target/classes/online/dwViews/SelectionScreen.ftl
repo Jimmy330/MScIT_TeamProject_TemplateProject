@@ -87,8 +87,8 @@
                 <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
             </div>
             <div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
-                <button onclick="selectPlayer()">START NEW GAME</button>
-                <button onclick="javascript:window.location.href='Statistics.html'">GAME STATISTICS</button>
+                <button onclick="window.location.href='game'">START NEW GAME</button>
+                <button onclick="window.location.href='stats'">GAME STATISTICS</button>
             
             </div>
 			
@@ -114,7 +114,7 @@
 			// Add your other Javascript methods Here
 			// -----------------------------------------
             function selectPlayer(){
-                var numOfPlayer=prompt("Enter the number of players you want to play against.",4)
+                //var numOfPlayer=prompt("Enter the number of players you want to play against.",4)
                 window.location.href='game'
             
             }

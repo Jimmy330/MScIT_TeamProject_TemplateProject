@@ -69,6 +69,7 @@ public class TopTrumpController {
 			}
 			modelObject.setIndexOfCategory(indexOfCategory);			
 			log.selectionLog(indexOfCategory);
+			
 			modelObject.judgePhase();
 			viewObject.printResult();
 			log.communalPileLog();

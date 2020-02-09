@@ -1,8 +1,8 @@
 {
-    "deckFile": "StarCitizenDeck.txt",
+    "deckFile": "Deck.txt",
     "numAIPlayers": 4,
     "server": {
         "applicationConnectors" : [{"type" : "http", "port" : 7777}],
         "adminConnectors" : [{"type" : "http", "port" : 7778}]
     }
-}
+}z

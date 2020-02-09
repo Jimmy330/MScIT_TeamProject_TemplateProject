@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -21,6 +22,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import commandline.Card;
 import commandline.Player;
 import commandline.TopTrumpModel;
+import jersey.repackaged.com.google.common.collect.Maps;
 
 @Path("/toptrumps") // Resources specified here should be hosted at http://localhost:7777/toptrumps
 @Produces(MediaType.APPLICATION_JSON) // This resource returns JSON content
@@ -69,9 +71,11 @@ public class TopTrumpsRESTAPI {
 
 		model = new TopTrumpModel();
 		model.loadDeck(deckFile);
+		model.shuffle(model.getGameDeck(), model.getNumofcards());
 		model.loadPlayer();
-		model.drawPhase();
-		return card();
+		model.setNumOfRounds(0);
+		roundStart();
+		return oWriter.writeValueAsString(0);
 	}
 
 	@GET
@@ -81,7 +85,6 @@ public class TopTrumpsRESTAPI {
 		ArrayList<Player> playerInfo = new ArrayList<Player>();
 
 		for (int i = 0; i <= num; i++) {
-			if(model.getPlayer()[i].isAlive())
 			playerInfo.add(model.getPlayer()[i]);
 		}
 		String list = oWriter.writeValueAsString(playerInfo);
@@ -89,9 +92,9 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/roundNo")
+	@Path("/roundno")
 	public String getRoundNo() {
-		return Integer.toString(model.getNumOfRounds() + 1);
+		return Integer.toString(model.getNumOfRounds());
 	}
 
 	@GET
@@ -99,7 +102,6 @@ public class TopTrumpsRESTAPI {
 	public String getCommonDeck() throws JsonProcessingException {
 		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
 	}
-
 
 	@GET
 	@Path("/category")
@@ -116,7 +118,6 @@ public class TopTrumpsRESTAPI {
 
 		return oWriter.writeValueAsString(selectorInfo);
 
-		// return selectCategory();
 	}
 
 	@GET
@@ -124,11 +125,13 @@ public class TopTrumpsRESTAPI {
 	public String selector() throws IOException {
 
 		int indexOfCategory = model.selectPhase();
-
 		HashMap<String, String> selectorInfo = new HashMap<String, String>();
 		Player selector = model.getPlayer()[model.getSelector()];
-		String categoryName = Card.categoryName[indexOfCategory + 1];
-
+		String categoryName = "";
+		if (indexOfCategory > 0) {
+			categoryName = Card.categoryName[indexOfCategory];
+			model.setIndexOfCategory(indexOfCategory);
+		}
 		selectorInfo.put("name", selector.getName());
 		selectorInfo.put("type", Integer.toString(selector.getType()));
 		selectorInfo.put("category", categoryName);
@@ -138,18 +141,15 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/roundWinner")
+	@Path("/roundwinner")
 	public String getRoundWinner() throws IOException {
+		model.judgePhase();
 
-		if(model.roundWinner()<0) {
-			ArrayList<String> list= new ArrayList<String>();
-			
-			String str = "Opps~! This round is a draw! \n";
-			
-			str+=model.getCardsInCommonDeck()+" cards moved into communal pile";
+		if (model.roundWinner() < 0) {
+			ArrayList<Integer> list = new ArrayList<>();
 
-			list.add("0");
-			list.add(str);
+			list.add(0);
+			list.add(model.getCardsInCommonDeck());
 			return oWriter.writeValueAsString(list);
 		}
 		return oWriter.writeValueAsString(model.getPlayer()[model.roundWinner()]);
@@ -158,64 +158,37 @@ public class TopTrumpsRESTAPI {
 	@GET
 	@Path("/roundstart")
 	public String roundStart() throws IOException {
-		model.judgePhase();
-		model.drawPhase();
-		model.setNumOfRounds(model.getNumOfRounds()+1);
-		return selector();
+
+		if (!model.gameIsOver()) {
+			model.drawPhase();
+			model.setNumOfRounds(model.getNumOfRounds() + 1);
+			return selector();
+		}
+
+		return oWriter.writeValueAsString(false);
+
 	}
 
 	@GET
 	@Path("/gamewinner")
 	public String getGameWinner() throws JsonProcessingException {
-		if(model.gameIsOver()){
+		List<LinkedHashMap<String, String>> list = new ArrayList<>();
 
-			HashMap<String,Integer> list = new HashMap<String,Integer>();
-			for(int i =0;i<num+1;i++){
-			int gameData= model.getPlayer()[i].getRoundWin();	
-			String playerName=model.getPlayer()[i].getName();
-			list.put(playerName, gameData);
-			
-			}
-			return oWriter.writeValueAsString(list);		
+		LinkedHashMap<String, String> gameStatus = Maps.newLinkedHashMap();
+		LinkedHashMap<String, String> gameData = Maps.newLinkedHashMap();
+
+		gameStatus.put("gameWinner", model.getGameWinner().getName());
+		list.add(gameStatus);
+
+		for (int i = 0; i < num + 1; i++) {
+			String playerGameData = Integer.toString(model.getPlayer()[i].getRoundWin());
+			String playerName = model.getPlayer()[i].getName();
+
+			gameData.put(playerName, playerGameData);
 		}
-		return oWriter.writeValueAsString(false);
-	}
+		list.add(gameData);
 
-	
-
-	@GET
-	@Path("/helloJSONList")
-	/**
-	 * Here is an example of a simple REST get request that returns a String. We
-	 * also illustrate here how we can convert Java objects to JSON strings.
-	 * 
-	 * @return - List of words as JSON
-	 * @throws IOException
-	 */
-	public String helloJSONList() throws IOException {
-
-		List<String> listOfWords = new ArrayList<String>();
-		listOfWords.add("Hello");
-		listOfWords.add("World!");
-
-		// We can turn arbatory Java objects directly into JSON strings using
-		// Jackson seralization, assuming that the Java objects are not too complex.
-		String listAsJSONString = oWriter.writeValueAsString(listOfWords);
-
-		return listAsJSONString;
-	}
-
-	@GET
-	@Path("/helloWord")
-	/**
-	 * Here is an example of how to read parameters provided in an HTML Get request.
-	 * 
-	 * @param Word - A word
-	 * @return - A String
-	 * @throws IOException
-	 */
-	public String helloWord(@QueryParam("Word") String Word) throws IOException {
-		return "Hello " + Word;
+		return oWriter.writeValueAsString(list);
 	}
 
 }

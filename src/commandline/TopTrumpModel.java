@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class TopTrumpModel {
-	private final static int numOfCards = 40;
+	private final static int numOfCards = 20;
 	private Card[] gameDeck = new Card[50];// ���п�Ƭ
 	private Card[] commonDeck = new Card[50];// ��Ϸƽ��ʱ�����Ĺ�����
 	private int cardsInCommonDeck = 0;
@@ -21,8 +21,8 @@ public class TopTrumpModel {
 
 	public TopTrumpModel() {
 
-		File deckFile = new File("StarCitizenDeck.txt");
-		loadDeck(deckFile);
+		 File deckFile = new File("Deck.txt");
+		 loadDeck(deckFile);
 
 	}
 	
@@ -61,6 +61,8 @@ public class TopTrumpModel {
 	}
 
 	public void judgePhase() {
+		
+		// round winner gains cards
 		int winner = roundWinner();
 		if (winner > -1) {
 			player[winner].win();
@@ -72,6 +74,9 @@ public class TopTrumpModel {
 			selector = winner;
 		}else {
 			numOfDraws++;
+		}
+		for(int i =0;i<player.length;i++){
+			if(player[i].getNumOfCards()==0) player[i].setAlive(false);
 		}
 	}
 
@@ -97,9 +102,10 @@ public class TopTrumpModel {
 		int maxValue = 0;
 		int winner = -1;
 		for (int i = 0; i < 5; i++) {
-			if (!player[i].isAlive())
+			if (!player[i].isAlive()){
 				continue;
-				categoryValue[i] = player[i].getHand().getCategory()[indexOfCategory];
+			}
+			categoryValue[i] = player[i].getHand().getCategory()[indexOfCategory];
 			if (categoryValue[i] > maxValue) {
 				maxValue = categoryValue[i];
 				winner = i;
@@ -150,17 +156,21 @@ public class TopTrumpModel {
 
 	public boolean gameIsOver() {
 		int surviver = 0;
-		Player gameWinner = null;
+		
 		for (int i = 0; i < 5; i++) {
 			if (player[i].isAlive()) {
 				surviver++;
 				gameWinner=player[i];
 			}				
 		}
-		this.gameWinner=gameWinner;
-
-		return surviver == 1;
+		if(surviver == 1||surviver == 0){
+			return true;
+		}
+		return false;
 	}
+	
+
+
 
 	public void printDeck() {
 		String[] firstline = Card.getCategoryName();
@@ -233,7 +243,7 @@ public class TopTrumpModel {
 		return commonDeck;
 	}
 
-	public Player getGameWinner() {
+	public Player getGameWinner() {	
 		return gameWinner;
 	}
 	
