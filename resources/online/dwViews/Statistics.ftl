@@ -18,6 +18,58 @@
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+		 <style>
+            body {
+                background-image: url(https://i.ibb.co/rmBjPS4/background.jpg);
+                background-color: rgba(0, 0, 0, 0.2);
+                background-size: cover;
+            }
+    
+
+            .div{
+                margin-top: 50px;
+            }
+
+            .card:hover {
+                box-shadow: 0 80px 16px 0 rgba(0, 0, 0, 0.0.2);
+            }
+
+            img {
+                border-radius: 5px 5px 0 0;
+                border-color: rgba(0, 0, 0, 0.2);
+            }
+
+            button{
+                background-color: rgba(0, 0, 0, 0.9);
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 20px;
+                cursor: pointer;
+				width: 300px;
+            }
+
+            table{
+                background-color: rgba(0, 0, 0, 0.9);
+                width: 700px;
+                border-style: groove;
+                border-color:antiquewhite;
+                color: white;
+                padding: 15px 32px;
+                text-align: left;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 20px;
+                cursor: pointer;
+
+            }
+        </style>
+
 	</head>
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
@@ -25,6 +77,41 @@
     	<div class="container">
 
 			<!-- Add your HTML Here -->
+			<div id="Banner" style="text-align: center;">
+            <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
+        </div>
+        <div style="text-align: center;margin-top: 6rem;">
+            <table style="border-collapse:separate; border-spacing:20px 15px;">
+                <tr>
+					<td>Number of Games: </td>
+					<td id="d0"></td>
+                </tr>
+
+                <tr>
+					<td>Number of Human Wins: </td>
+					<td id="d1"></td>
+                </tr>
+
+                <tr>
+					<td>Number of AI Wins: </td>
+					<td id="d2"></td>
+                </tr>
+
+                <tr>
+					<td>Average Draws per game: </td>
+					<td id="d3"></td>
+                </tr>
+                
+                <tr>
+					<td>Longest Game: </td>
+					<td id="d4"></td>
+                </tr>
+            </table>
+		</div>
+		<div id="buttons" style="text-align: center; margin-top: 2rem;">
+			<button onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
+			<button onclick="window.location.href='http://localhost:7777/toptrumps/game'">NEW GAME</button>
+        </div>
 		
 		</div>
 		
@@ -32,14 +119,26 @@
 		
 			// Method that is called on page load
 			function initalize() {
-			
-				// --------------------------------------------------------------------------
-				// You can call other methods you want to run when the page first loads here
-				// --------------------------------------------------------------------------
+				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/gameData"); 
+
+				if (!xhr) {
+  					alert("CORS not supported");
+				}
+
+				xhr.onload = function(e) {
+ 					var gameData = JSON.parse(xhr.response);
+					
+					for(var i = 0; i<gameData.length;i++){
+						document.getElementById("d"+i).innerHTML=gameData[i];
+					}
+		
+	
 				
-				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				};
+
+				xhr.send();	
+			
+
 				
 			}
 			

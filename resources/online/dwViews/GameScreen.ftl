@@ -46,6 +46,7 @@
             background-color: rgba(255, 255, 255);
             /* color: darkseagreen; */
             display: none;
+            
 
         }
 
@@ -57,6 +58,16 @@
             text-align: center;
             display: block;
 
+        }
+        .losebackground{
+            
+            width: 170px;
+            height: 260px;
+
+            border-radius: 5px;
+            text-align: center;
+            padding: 170px 0;
+            background-color: rgb(10, 10, 10);
         }
 
 
@@ -152,12 +163,11 @@
                 style="height: 200px;font-size: medium;color:aliceblue;;background-color:rgba(128, 127, 127, 0.199);padding: 0.8rem;">
             </div>
             <div id="button">
-                <button id="showWinner" onclick="roundWinner()">Show Winner</button>
-                <button id="nextRound" onclick="nextRound()"> Next Round</button>
-                <button id="return" onclick="window.location.href='http://localhost:7777/toptrumps/'">Return To The
-                    Select Screen</button>
+                <button id="showWinner" onclick="roundWinner()">SHOW WINNER</button>
+                <button id="nextRound" onclick="nextRound()"> NEXT ROUND</button>
+                <button id="return" onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
                 <div class="dropdown">
-                    <button id="select">Select Category</button>
+                    <button id="select">SELECT CATEGORY</button>
                     <div class="dropdown-content">
                         <a href="#" onclick=selectCategory(1)>Size</a>
                         <a href="#" onclick=selectCategory(2)>Speed</a>
@@ -220,7 +230,7 @@
         // Add your other Javascript methods Here
         // -----------------------------------------
         function getRoundNo() {
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundno");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundNo");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -233,7 +243,7 @@
         }
 
         function getCommonDeck() {
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/commondeck");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/commonDeck");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -325,17 +335,11 @@
 
                 }
 
-                for (var i = 1; i < playerCard.length; i++) {
+                for (var i = 0; i < playerCard.length; i++) {
                     if (playerCard[i].alive == false) {
                         document.getElementById(playerCard[i].name).style.display = "none";
-
                     }
                 }
-                if (playerCard[0].alive == false) {
-                    document.getElementById("cardYou").style.display = "none";
-                }
-
-
             }
 
             xhr.send();
@@ -382,7 +386,7 @@
         }
 
         function roundWinner() {
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundwinner");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundWinner");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -411,7 +415,7 @@
         }
 
         function nextRound() {
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundstart");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/newRound");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -439,7 +443,7 @@
         }
 
         function gameOver() {
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/gamewinner");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/gameWinner");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -457,8 +461,6 @@
                 document.getElementById("showWinner").style.display = "none";
                 document.getElementById("return").style.display = "block";
                 document.getElementById(gameOver[0].gameWinner).style.display = "block";
-
-
 
             }
             xhr.send();

@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import commandline.Card;
 import commandline.Player;
+import commandline.TopTrumpJDBC;
 import commandline.TopTrumpModel;
 import jersey.repackaged.com.google.common.collect.Maps;
 
@@ -55,6 +56,7 @@ public class TopTrumpsRESTAPI {
 	private TopTrumpModel model;
 	private int num;
 	private File deckFile;
+	private TopTrumpJDBC dataBase;
 
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws IOException {
 		// ----------------------------------------------------
@@ -67,14 +69,14 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/initalize")
-	public String initalize() throws IOException {
-
+	public String initalize() throws Exception {
 		model = new TopTrumpModel();
+		
 		model.loadDeck(deckFile);
 		model.shuffle(model.getGameDeck(), model.getNumofcards());
 		model.loadPlayer();
 		model.setNumOfRounds(0);
-		roundStart();
+		newRound();
 		return oWriter.writeValueAsString(0);
 	}
 
@@ -92,13 +94,13 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/roundno")
+	@Path("/roundNo")
 	public String getRoundNo() {
 		return Integer.toString(model.getNumOfRounds());
 	}
 
 	@GET
-	@Path("commondeck")
+	@Path("commonDeck")
 	public String getCommonDeck() throws JsonProcessingException {
 		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
 	}
@@ -141,7 +143,7 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/roundwinner")
+	@Path("/roundWinner")
 	public String getRoundWinner() throws IOException {
 		model.judgePhase();
 
@@ -156,8 +158,8 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/roundstart")
-	public String roundStart() throws IOException {
+	@Path("/newRound")
+	public String newRound() throws IOException {
 
 		if (!model.gameIsOver()) {
 			model.drawPhase();
@@ -170,8 +172,8 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("/gamewinner")
-	public String getGameWinner() throws JsonProcessingException {
+	@Path("/gameWinner")
+	public String getGameWinner() throws Exception {
 		List<LinkedHashMap<String, String>> list = new ArrayList<>();
 
 		LinkedHashMap<String, String> gameStatus = Maps.newLinkedHashMap();
@@ -188,7 +190,35 @@ public class TopTrumpsRESTAPI {
 		}
 		list.add(gameData);
 
+		dataBase = new TopTrumpJDBC(model);
+
+		int lastgid=dataBase.lastGidbefore();
+		// int lastpid=dataBase.lastPidbefore()+1;
+		// for(int i=0;i<5;i++) {
+		// 	dataBase.insertPlayerDetail(i+lastpid, model.getPlayer()[i].getName(), model.getPlayer()[i].getType());
+		// }
+		dataBase.insertGameResult(lastgid+1, model.getNumOfRounds(), model.getNumOfDraws(), model.roundWinner()+1);
+		for(int i=0;i<5;i++) {
+			dataBase.insertPlayerResult(lastgid+1, i+1, model.getPlayer()[i].getRoundWin());
+		}
+
 		return oWriter.writeValueAsString(list);
+	}
+
+	@GET
+	@Path("/gameData")
+	public String gameData() throws Exception {
+
+		List<Integer> list = new ArrayList<>();
+		list.add(dataBase.lastGidbefore());
+		list.add(dataBase.numOfHumanWins());
+		list.add(dataBase.numOfAIWins());
+		list.add((int)dataBase.aveDraw());
+		list.add(dataBase.largeRounds());
+
+		return oWriter.writeValueAsString(list);
+
+
 	}
 
 }
