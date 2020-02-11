@@ -186,7 +186,7 @@
                 <h3 id="humanPlayerName" class="playerName"></h3>
                 <h5 id="numOfCard_human" class="numOfCard"></h5>
                 <div id="cardYou" class="card" style="display: block;">
-                    <img src="/assets/dreepy.png" alt=""></img>
+                    <img id="imgs" alt="Opps~!picture is missing"></img>
                     <h5 id="cardName_human"></h5>
                     <table id="humanPlayer"> </table>
                 </div>
@@ -272,7 +272,8 @@
                 document.getElementById("humanPlayerName").innerHTML = playerCard[0].name;
                 document.getElementById("numOfCard_human").innerHTML = "Card(" + playerCard[0].numOfCards + ")";
                 document.getElementById("cardName_human").innerText = playerCard[0].hand.name;
-                var categoryName = ["Size", "Speed", "Range", "Firepower", "Cargo"];
+                document.getElementById("imgs").src=loadImg(playerCard[0].hand.name);
+                var categoryName = ["HP","Physical","Defense","Magic","Speed"];
                 var category = "";
                 for (var i = 0; i < categoryName.length; i++) {
                     category += "<tr><td>" + categoryName[i] + "</td><td>" + playerCard[0].hand.category[i + 1] + "</td></tr>"
@@ -306,13 +307,15 @@
 
                     ai_cardarea.appendChild(card);
 
+                    var cardName = document.createElement("h5");
+                    cardName.innerText = playerCard[i].hand.name;
+
                     var img = document.createElement("img");
-                    img.src = "https://i.ibb.co/rmBjPS4/background.jpg";
+                    img.src=loadImg(playerCard[i].hand.name);
 
                     card.appendChild(img);
 
-                    var cardName = document.createElement("h5");
-                    cardName.innerText = playerCard[i].hand.name;
+                    
 
                     card.appendChild(cardName);
 
@@ -343,6 +346,27 @@
             }
 
             xhr.send();
+
+        }
+
+        function loadImg(imgs){
+            var imgURL;
+            switch(imgs){
+                case "Dreepy": imgURL="/assets/dreepy.png" ;break;
+                case "Applin": imgURL="/assets/applin.png" ;break;
+                case "Eiscue": imgURL="/assets/eiscue.png" ;break;
+                case "Gossifleur": imgURL="/assets/gossifleur.png" ;break;
+                case "Grookey": imgURL="/assets/grookey.png" ;break;
+                case "Milcery": imgURL="/assets/milcery.png" ;break;
+                case "Morpeko": imgURL="/assets/morpeko.png" ;break;
+                case "Scorbunny": imgURL="/assets/scorbunny.png" ;break;
+                case "Sinistea": imgURL="/assets/sinistea.png" ;break;
+                case "Sobble": imgURL="/assets/sobble.png" ;break;
+                case "Wooloo": imgURL="/assets/wooloo.png" ;break;
+                case "Yamper": imgURL="/assets/yamper.png" ;break;
+
+            }
+            return imgURL;
 
         }
 
