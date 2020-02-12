@@ -68,6 +68,7 @@ public class TopTrumpsRESTAPI {
 		dataBase = new TopTrumpJDBC(model);
 		try {
 			dataBase.create();
+			dataBase.initialPlayer();
 		}catch(Exception e) {
 			
 		}
@@ -81,11 +82,11 @@ public class TopTrumpsRESTAPI {
 		model.loadDeck(deckFile);
 		model.shuffle(model.getGameDeck(), model.getNumofcards());
 		model.loadPlayer();
-		try {
-			dataBase.initialPlayer();
-		}catch(Exception e) {
-			
-		}
+//		try {
+//			dataBase.initialPlayer();
+//		}catch(Exception e) {
+//			
+//		}
 		model.setNumOfRounds(0);
 		newRound();
 		return oWriter.writeValueAsString(0);
@@ -206,9 +207,14 @@ public class TopTrumpsRESTAPI {
 			gameData.put(playerName, playerGameData);
 		}
 		list.add(gameData);
+		
 
-		
-		
+		try {
+			//dataBase.create();
+			dataBase.initialPlayer();
+		}catch(Exception e) {
+			
+		}
 
 		int lastgid=dataBase.lastGidbefore();
 	
