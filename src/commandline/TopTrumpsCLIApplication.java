@@ -40,8 +40,7 @@ public class TopTrumpsCLIApplication {
 			
 			controller.selectMenu();
 			// Loop until the user wants to exit the game
-			
-			userWantsToQuit=true; // use this when the user wants to exit the game
+			userWantsToQuit=controller.wantsToQuit();// use this when the user wants to exit the game
 			
 		}
 		view.closeSc();

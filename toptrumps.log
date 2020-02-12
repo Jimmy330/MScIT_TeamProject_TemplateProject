@@ -1,109 +1,2869 @@
 Load complete card deck
-Description Size Speed Range Firepower Cargo 
-350r 1 9 2 3 0 
-Avenger 2 5 4 3 0 
-Carrack 6 2 10 4 0 
-Constellation 4 5 7 3 0 
-Hawk 1 3 2 4 0 
-Hornet 2 5 3 4 0 
-Hurricane 2 5 3 5 0 
-Idris 8 2 7 10 0 
-m50 1 10 2 2 0 
-Merchantman 7 3 5 6 0 
-350r 1 9 2 3 0 
-Avenger 2 5 4 3 0 
-Carrack 6 2 10 4 0 
-Constellation 4 5 7 3 0 
-Hawk 1 3 2 4 0 
-Hornet 2 5 3 4 0 
-Hurricane 2 5 3 5 0 
-Idris 8 2 7 10 0 
-m50 1 10 2 2 0 
-Merchantman 7 3 5 6 0 
+Description HP Physical Defense Magic Speed 
+Dreepy 28 60 30 40 97 
+Dreepy 28 60 30 40 97 
+Dreepy 28 60 30 40 97 
+Dreepy 28 60 30 40 97 
+Applin 40 40 80 40 20 
+Applin 40 40 80 40 20 
+Applin 40 40 80 40 20 
+Applin 40 40 80 40 20 
+Sinistea 40 45 45 74 50 
+Sinistea 40 45 45 74 50 
+Sinistea 40 45 45 74 50 
+Sinistea 40 45 45 74 50 
+Gossifleur 65 40 60 55 10 
+Gossifleur 65 40 60 55 10 
+Gossifleur 65 40 60 55 10 
+Gossifleur 65 40 60 55 10 
+Wooloo 42 40 55 40 48 
+Wooloo 42 40 55 40 48 
+Wooloo 42 40 55 40 48 
+Milcery 45 40 40 50 34 
+Milcery 45 40 40 50 34 
+Milcery 45 40 40 50 34 
+Scorbunny 50 71 40 40 69 
+Scorbunny 50 71 40 40 69 
+Scorbunny 50 71 40 40 69 
+Sobble 50 40 40 70 70 
+Sobble 50 40 40 70 70 
+Sobble 50 40 40 70 70 
+Grookey 50 65 50 40 65 
+Grookey 50 65 50 40 65 
+Grookey 50 65 50 40 65 
+Morpeko 58 95 58 70 82 
+Morpeko 58 95 58 70 82 
+Morpeko 58 95 58 70 82 
+Yamper 59 45 65 40 26 
+Yamper 59 45 65 40 26 
+Yamper 59 45 65 40 26 
+Eiscue 75 35 80 65 50 
+Eiscue 75 35 80 65 50 
+Eiscue 75 35 80 65 50 
 
 -----------------------------------------
 Load complete card deck
-Description Size Speed Range Firepower Cargo 
-Hurricane 2 5 3 5 0 
-Avenger 2 5 4 3 0 
-Hawk 1 3 2 4 0 
-Constellation 4 5 7 3 0 
-Hornet 2 5 3 4 0 
-Carrack 6 2 10 4 0 
-Avenger 2 5 4 3 0 
-350r 1 9 2 3 0 
-Merchantman 7 3 5 6 0 
-Idris 8 2 7 10 0 
-Carrack 6 2 10 4 0 
-Hornet 2 5 3 4 0 
-Merchantman 7 3 5 6 0 
-Constellation 4 5 7 3 0 
-Hurricane 2 5 3 5 0 
-350r 1 9 2 3 0 
-Hawk 1 3 2 4 0 
-Idris 8 2 7 10 0 
-m50 1 10 2 2 0 
-m50 1 10 2 2 0 
+Description HP Physical Defense Magic Speed 
+Sobble 50 40 40 70 70 
+Gossifleur 65 40 60 55 10 
+Yamper 59 45 65 40 26 
+Milcery 45 40 40 50 34 
+Yamper 59 45 65 40 26 
+Gossifleur 65 40 60 55 10 
+Scorbunny 50 71 40 40 69 
+Sinistea 40 45 45 74 50 
+Eiscue 75 35 80 65 50 
+Sinistea 40 45 45 74 50 
+Applin 40 40 80 40 20 
+Milcery 45 40 40 50 34 
+Wooloo 42 40 55 40 48 
+Yamper 59 45 65 40 26 
+Grookey 50 65 50 40 65 
+Applin 40 40 80 40 20 
+Morpeko 58 95 58 70 82 
+Scorbunny 50 71 40 40 69 
+Milcery 45 40 40 50 34 
+Dreepy 28 60 30 40 97 
+Sobble 50 40 40 70 70 
+Dreepy 28 60 30 40 97 
+Sinistea 40 45 45 74 50 
+Dreepy 28 60 30 40 97 
+Dreepy 28 60 30 40 97 
+Sobble 50 40 40 70 70 
+Gossifleur 65 40 60 55 10 
+Applin 40 40 80 40 20 
+Grookey 50 65 50 40 65 
+Grookey 50 65 50 40 65 
+Eiscue 75 35 80 65 50 
+Eiscue 75 35 80 65 50 
+Sinistea 40 45 45 74 50 
+Scorbunny 50 71 40 40 69 
+Wooloo 42 40 55 40 48 
+Applin 40 40 80 40 20 
+Wooloo 42 40 55 40 48 
+Gossifleur 65 40 60 55 10 
+Morpeko 58 95 58 70 82 
+Morpeko 58 95 58 70 82 
 
 -----------------------------------------
 Each player's card deck
 You
-Description Size Speed Range Firepower Cargo 
-Hurricane[0, 2, 5, 3, 5, 0]
-Carrack[0, 6, 2, 10, 4, 0]
-Carrack[0, 6, 2, 10, 4, 0]
-350r[0, 1, 9, 2, 3, 0]
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
 
 AI Player 1
-Description Size Speed Range Firepower Cargo 
-Avenger[0, 2, 5, 4, 3, 0]
-Avenger[0, 2, 5, 4, 3, 0]
-Hornet[0, 2, 5, 3, 4, 0]
-Hawk[0, 1, 3, 2, 4, 0]
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
 
 AI Player 2
-Description Size Speed Range Firepower Cargo 
-Hawk[0, 1, 3, 2, 4, 0]
-350r[0, 1, 9, 2, 3, 0]
-Merchantman[0, 7, 3, 5, 6, 0]
-Idris[0, 8, 2, 7, 10, 0]
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
 
 AI Player 3
-Description Size Speed Range Firepower Cargo 
-Constellation[0, 4, 5, 7, 3, 0]
-Merchantman[0, 7, 3, 5, 6, 0]
-Constellation[0, 4, 5, 7, 3, 0]
-m50[0, 1, 10, 2, 2, 0]
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
 
 AI Player 4
-Description Size Speed Range Firepower Cargo 
-Hornet[0, 2, 5, 3, 4, 0]
-Idris[0, 8, 2, 7, 10, 0]
-Hurricane[0, 2, 5, 3, 5, 0]
-m50[0, 1, 10, 2, 2, 0]
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
 
 
 -----------------------------------------
 Round 1 Current cards in play
 You
-Description Size Speed Range Firepower Cargo 
-Hurricane[0, 2, 5, 3, 5, 0]
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
 
 AI Player 1
-Description Size Speed Range Firepower Cargo 
-Avenger[0, 2, 5, 4, 3, 0]
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
 
 AI Player 2
-Description Size Speed Range Firepower Cargo 
-Hawk[0, 1, 3, 2, 4, 0]
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
 
 AI Player 3
-Description Size Speed Range Firepower Cargo 
-Constellation[0, 4, 5, 7, 3, 0]
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
 
 AI Player 4
-Description Size Speed Range Firepower Cargo 
-Hornet[0, 2, 5, 3, 4, 0]
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
 
 
+-----------------------------------------
+You selected Speed 70
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 2 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+
+-----------------------------------------
+You selected Speed 10
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 3 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 50
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 4 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+AI Player 1 selected Physical 95
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 5 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+AI Player 1 selected Speed 97
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+Sobble 50 40 40 70 70 
+Dreepy 28 60 30 40 97 
+Sinistea 40 45 45 74 50 
+Dreepy 28 60 30 40 97 
+Dreepy 28 60 30 40 97 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 6 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+
+-----------------------------------------
+AI Player 1 selected HP 65
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 7 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 80
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+Eiscue 75 35 80 65 50 
+Eiscue 75 35 80 65 50 
+Sinistea 40 45 45 74 50 
+Scorbunny 50 71 40 40 69 
+Wooloo 42 40 55 40 48 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+Round 8 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 55
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 9 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+
+-----------------------------------------
+You selected Speed 70
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 10 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+
+-----------------------------------------
+You selected Speed 10
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 11 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 74
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Yamper[0, 59, 45, 65, 40, 26]
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 12 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 80
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 13 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 74
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 14 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 80
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 15 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 50
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 16 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+
+-----------------------------------------
+You selected Speed 50
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 17 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+
+
+-----------------------------------------
+You selected Speed 69
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 18 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+
+-----------------------------------------
+You selected Speed 50
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 19 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 80
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+Applin 40 40 80 40 20 
+Applin 40 40 80 40 20 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 20 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+
+-----------------------------------------
+AI Player 1 selected Physical 95
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 21 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+
+-----------------------------------------
+AI Player 1 selected Physical 71
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 22 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 50
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 23 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+You selected Speed 82
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 24 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+AI Player 1 selected Speed 97
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 25 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 74
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 26 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Eiscue[0, 75, 35, 80, 65, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 70
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 27 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+AI Player 1 selected Speed 97
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 28 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Sinistea[0, 40, 45, 45, 74, 50]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Dreepy[0, 28, 60, 30, 40, 97]
+
+
+-----------------------------------------
+AI Player 1 selected Speed 97
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 29 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Wooloo[0, 42, 40, 55, 40, 48]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Sobble[0, 50, 40, 40, 70, 70]
+
+
+-----------------------------------------
+AI Player 1 selected Magic 70
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 30 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+
+-----------------------------------------
+AI Player 1 selected HP 65
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 31 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Applin[0, 40, 40, 80, 40, 20]
+
+
+-----------------------------------------
+AI Player 1 selected Defense 80
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 32 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+
+-----------------------------------------
+AI Player 1 selected Physical 65
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+Morpeko[0, 58, 95, 58, 70, 82]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Applin[0, 40, 40, 80, 40, 20]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 33 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Milcery[0, 45, 40, 40, 50, 34]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+
+-----------------------------------------
+You selected Speed 34
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 34 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Morpeko[0, 58, 95, 58, 70, 82]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+
+-----------------------------------------
+AI Player 1 selected HP 65
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Grookey[0, 50, 65, 50, 40, 65]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Round 35 Current cards in play
+You
+Description HP Physical Defense Magic Speed 
+Grookey[0, 50, 65, 50, 40, 65]
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+
+-----------------------------------------
+AI Player 1 selected Physical 71
+-----------------------------------------
+Remaining cards in common deck
+Description HP Physical Defense Magic Speed 
+
+-----------------------------------------
+Each player's card deck
+You
+Description HP Physical Defense Magic Speed 
+
+AI Player 1
+Description HP Physical Defense Magic Speed 
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Milcery[0, 45, 40, 40, 50, 34]
+Eiscue[0, 75, 35, 80, 65, 50]
+Yamper[0, 59, 45, 65, 40, 26]
+Sinistea[0, 40, 45, 45, 74, 50]
+Wooloo[0, 42, 40, 55, 40, 48]
+Applin[0, 40, 40, 80, 40, 20]
+Eiscue[0, 75, 35, 80, 65, 50]
+Grookey[0, 50, 65, 50, 40, 65]
+Applin[0, 40, 40, 80, 40, 20]
+Applin[0, 40, 40, 80, 40, 20]
+Wooloo[0, 42, 40, 55, 40, 48]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Morpeko[0, 58, 95, 58, 70, 82]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sobble[0, 50, 40, 40, 70, 70]
+Dreepy[0, 28, 60, 30, 40, 97]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Sinistea[0, 40, 45, 45, 74, 50]
+Eiscue[0, 75, 35, 80, 65, 50]
+Sobble[0, 50, 40, 40, 70, 70]
+Milcery[0, 45, 40, 40, 50, 34]
+Dreepy[0, 28, 60, 30, 40, 97]
+Sinistea[0, 40, 45, 45, 74, 50]
+Dreepy[0, 28, 60, 30, 40, 97]
+Wooloo[0, 42, 40, 55, 40, 48]
+Sobble[0, 50, 40, 40, 70, 70]
+Scorbunny[0, 50, 71, 40, 40, 69]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Yamper[0, 59, 45, 65, 40, 26]
+Applin[0, 40, 40, 80, 40, 20]
+Milcery[0, 45, 40, 40, 50, 34]
+Grookey[0, 50, 65, 50, 40, 65]
+Morpeko[0, 58, 95, 58, 70, 82]
+Gossifleur[0, 65, 40, 60, 55, 10]
+Grookey[0, 50, 65, 50, 40, 65]
+Scorbunny[0, 50, 71, 40, 40, 69]
+
+AI Player 2
+Description HP Physical Defense Magic Speed 
+
+AI Player 3
+Description HP Physical Defense Magic Speed 
+
+AI Player 4
+Description HP Physical Defense Magic Speed 
+
+
+-----------------------------------------
+Game Winner is AI Player 1
 -----------------------------------------

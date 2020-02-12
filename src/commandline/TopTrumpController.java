@@ -33,7 +33,14 @@ public class TopTrumpController {
 		int s5=jdbcObject.largeRounds();
 		viewObject.printGameStatus(s1,s2,s3,s4,s5);
 	}
-	
+	public boolean wantsToQuit() {
+		viewObject.printcontinue();;
+		int k=viewObject.scanInt();
+		if(k==0) {
+			return true;
+		}
+			return false;
+	}
 	public void game() throws Exception {
 		
 
@@ -82,6 +89,7 @@ public class TopTrumpController {
 		log.gameWinnerLog();
 		try {
 			jdbcObject.create();
+			jdbcObject.initialPlayer();
 		}catch(Exception e) {
 			
 		}
