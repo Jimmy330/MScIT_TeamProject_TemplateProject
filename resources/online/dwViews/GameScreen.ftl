@@ -27,8 +27,7 @@
 
         .cardarea {
             width: 170px;
-            height: 300px;
-            background-color: #000;
+            height: 300px;          
             float: left;
             display: block;
             margin-left: 4%;
@@ -40,11 +39,9 @@
             padding: 10px;
             width: 170px;
             height: 260px;
-
             border-radius: 5px;
             text-align: center;
             background-color: rgba(255, 255, 255);
-            /* color: darkseagreen; */
             display: none;
             
 
@@ -154,7 +151,7 @@
                 Toptrumps</h1>
         </div>
 
-        <div id="menu" style="width: 20%;height: 640px;background-color: rgba(0, 0, 0, 0.8);float: left;">
+        <div id="menu" style="width: 22%;height: 640px;background-color: rgba(0, 0, 0, 0.8);float: left;">
             <div id="round" style="height: 5rem;border-style:groove;border-width: 1px;padding-left: 5px;">
                 <h2 id="roundNo" style="color: aliceblue;"></h2>
                 <h5 id="commonDeck" style="color: aliceblue;"></h5>
@@ -166,22 +163,21 @@
                 <button id="showWinner" onclick="roundWinner()">SHOW WINNER</button>
                 <button id="nextRound" onclick="nextRound()"> NEXT ROUND</button>
                 <button id="return" onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
-                <div class="dropdown">
+                <div id="category" class="dropdown">
                     <button id="select">SELECT CATEGORY</button>
                     <div class="dropdown-content">
-                        <a href="#" onclick=selectCategory(1)>Size</a>
-                        <a href="#" onclick=selectCategory(2)>Speed</a>
-                        <a href="#" onclick=selectCategory(3)>Range</a>
-                        <a href="#" onclick=selectCategory(4)>Firepower</a>
-                        <a href="#" onclick=selectCategory(5)>Cargo</a>
-
-                    </div>
+                        <a href="#" onclick=selectCategory(1)>HP</a>
+                        <a href="#" onclick=selectCategory(2)>Physical</a>
+                        <a href="#" onclick=selectCategory(3)>Defense</a>
+                        <a href="#" onclick=selectCategory(4)>Magic</a>
+                        <a href="#" onclick=selectCategory(5)>Speed</a>
+                    </div> 
                 </div>
 
             </div>
 
         </div>
-        <div id="humanCardArea" style="width: 80%;height: 320px;;background-color:rgba(0, 0, 0, 0.8);float: left;">
+        <div id="humanCardArea" style="width: 78%;height: 320px;;background-color:rgba(0, 0, 0, 0.8);float: left;">
             <div id="You" class="cardarea" style="display: block">
                 <h3 id="humanPlayerName" class="playerName"></h3>
                 <h5 id="numOfCard_human" class="numOfCard"></h5>
@@ -194,7 +190,7 @@
 
         </div>
 
-        <div id="AIcardArea" style="width: 80%;height: 320px;background-color: rgba(0, 0, 0, 0.8); float: left;">
+        <div id="AIcardArea" style="width: 78%;height: 320px;background-color: rgba(0, 0, 0, 0.8); float: left;">
         </div>
 
 
@@ -313,9 +309,7 @@
                     var img = document.createElement("img");
                     img.src=loadImg(playerCard[i].hand.name);
 
-                    card.appendChild(img);
-
-                    
+                    card.appendChild(img);            
 
                     card.appendChild(cardName);
 
@@ -349,6 +343,7 @@
 
         }
 
+        // load images method based on card name chosing relative picture
         function loadImg(imgs){
             var imgURL;
             switch(imgs){
@@ -370,6 +365,7 @@
 
         }
 
+        // get selector for each round
         function getSelector() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/selector");
             if (!xhr) {
@@ -382,8 +378,9 @@
                 if (selector.type == 1) {
                     document.getElementById("message").innerHTML = "It's your turn to select a category!"
                     document.getElementById("select").style.display = "block";
+                    document.getElementById("category").style.display="block";
                 } else {
-                    document.getElementById("message").innerHTML = selector.name + " selected " + selector.category;
+                    document.getElementById("message").innerHTML = "The active player: "+selector.name + "<br> Selected <strong>" + selector.category+"</strong>";
                     document.getElementById("showWinner").style.display = "block";
                 }
 
@@ -401,8 +398,8 @@
                 var selectResult = JSON.parse(xhr.response);
                 console.log(selectResult);
                 document.getElementById("showWinner").style.display = "block";
-                document.getElementById("select").style.display = "none";
-                document.getElementById("message").innerHTML = selectResult.name + " selected " + selectResult.category;
+                document.getElementById("category").style.display="none";
+                document.getElementById("message").innerHTML = selectResult.name + " selected <strong>" + selectResult.category+"</strong>";
 
             };
 
@@ -428,7 +425,6 @@
                 } else {
                     document.getElementById("message").innerHTML = roundWinner.name + " win this round ";
                     document.getElementById("card" + roundWinner.name).style.backgroundColor = "darkseagreen";
-
 
                 }
                 document.getElementById("showWinner").style.display = "none";
@@ -484,7 +480,7 @@
                 document.getElementById("message").innerHTML = message + gamedata;
                 document.getElementById("showWinner").style.display = "none";
                 document.getElementById("return").style.display = "block";
-                document.getElementById(gameOver[0].gameWinner).style.display = "block";
+                //document.getElementById(gameOver[0].gameWinner).style.display = "block";
 
             }
             xhr.send();

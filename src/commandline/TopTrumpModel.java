@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class TopTrumpModel {
-	private final static int numOfCards = 20;
+	private final static int numOfCards = 40;
 	private Card[] gameDeck = new Card[50];// ���п�Ƭ
 	private Card[] commonDeck = new Card[50];// ��Ϸƽ��ʱ�����Ĺ�����
 	private int cardsInCommonDeck = 0;

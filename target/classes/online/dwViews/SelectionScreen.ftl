@@ -24,44 +24,7 @@
                 background-color: rgba(0, 0, 0, 0.2);
                 background-size: cover;
             }
-    
-            .div1 {
-                margin-top: 50px;
-            }
-    
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                transition: 0.3s;
-                width: 180px;
-                border-radius: 5px;
-                border-color: rgba(0, 0, 0, 0.2);
-                float: left;
-                margin-right: 5%;
-                text-align: center;
-                background-color: rgba(243, 247, 247, 0.644);
-            }
-    
-            .card:hover {
-                box-shadow: 0 80px 16px 0 rgba(0, 0, 0, 0.0.2);
-            }
-    
-            img {
-                border-radius: 5px 5px 0 0;
-                border-color: rgba(0, 0, 0, 0.2);
-            }
-    
-            td {
-                padding-left: 1rem;
-                border-top: 1px dashed rgba(0, 0, 0, 0.2);
-                border-bottom: 1px dashed rgba(0, 0, 0, 0.2);    
-            }
-    
-            p {
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-                font-size: 0.8rem;
-            }
-    
+
             button {
                 background-color: rgba(0, 0, 0, 0.9);
                 border: none;
@@ -73,12 +36,16 @@
                 font-size: 16px;
                 margin: 4px 20px;
                 cursor: pointer;
+				width: 300px;
             }
+			dialog{
+				display: none;
+			}
         </style>
 
 	</head>
 
-    <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
+    <body> 
     	
     	<div class="container">
 
@@ -86,9 +53,27 @@
             <div id="Banner" style="text-align: center;">
                 <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
             </div>
-            <div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
-                <button onclick="window.location.href='game'">START NEW GAME</button>
-                <button onclick="window.location.href='stats'">GAME STATISTICS</button>
+			<div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
+				<!-- "window.location.href='game'" -->
+                <button onclick=showDialog()>START NEW GAME</button>
+				<button onclick="window.location.href='stats'">GAME STATISTICS</button>
+				<dialog id="dialog">
+					<h6 id="close" style="text-align: right;" onclick=closeDialog()>X</h6>
+					<h5>Please choose the number of players you want to play against.</h5>
+					<select id="select" style="width: 100px;margin-top: 30px;" >
+						<option value="4">4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>
+						<option value="1">1</option>	
+					</select>
+					Player
+					<div>
+						<button id="play" onclick=startGame() style="width: 150px;font-size: smaller;margin-top: 20px;">PLAY NOW</button>
+					</div>
+					
+				</dialog>
+
+				
             
             </div>
 			
@@ -97,25 +82,29 @@
 		
 		<script type="text/javascript">
 		
-			// Method that is called on page load
-			function initalize() {
-			
-				// --------------------------------------------------------------------------
-				// You can call other methods you want to run when the page first loads here
-				// --------------------------------------------------------------------------
-				
-				// For example, lets call our sample methods
-				// helloJSONList();
-				// helloWord("Student");
-				
+
+			function closeDialog(){
+				document.getElementById("dialog").style.display="none";
+
+			}
+
+			function showDialog(){
+				document.getElementById("dialog").style.display="block";
 			}
 			
+			function startGame(){
+				var x=document.getElementById("select");
+				
+				return window.location.href='game'
+
+
+			}
 			// -----------------------------------------
 			// Add your other Javascript methods Here
 			// -----------------------------------------
             function selectPlayer(){
                 //var numOfPlayer=prompt("Enter the number of players you want to play against.",4)
-                window.location.href='game'
+                
             
             }
 		

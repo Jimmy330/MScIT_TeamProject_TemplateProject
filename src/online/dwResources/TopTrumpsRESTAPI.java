@@ -100,9 +100,15 @@ public class TopTrumpsRESTAPI {
 	}
 
 	@GET
-	@Path("commonDeck")
+	@Path("/commonDeck")
 	public String getCommonDeck() throws JsonProcessingException {
 		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
+	}
+
+	@GET
+	@Path("/player")
+	public void setPlayerNum(@QueryParam("value")int playerNum){
+		
 	}
 
 	@GET
