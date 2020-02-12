@@ -10,7 +10,7 @@ public class TopTrumps {
 
 	/** This is the main class for the TopTrumps Applications 
 	 * @throws IOException */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		
 		System.out.println("--------------------");
 		System.out.println("--- Top Trumps   ---");

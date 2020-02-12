@@ -58,23 +58,34 @@ public class TopTrumpsRESTAPI {
 	private File deckFile;
 	private TopTrumpJDBC dataBase;
 
-	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws IOException {
+	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws Exception {
 		// ----------------------------------------------------
 		// Add relevant initalization here
 		// ----------------------------------------------------
 		num = conf.getNumAIPlayers();
 		deckFile = new File(conf.getDeckFile());
-
+		model = new TopTrumpModel();
+		dataBase = new TopTrumpJDBC(model);
+		try {
+			dataBase.create();
+		}catch(Exception e) {
+			
+		}
 	}
 
 	@GET
 	@Path("/initalize")
 	public String initalize() throws Exception {
-		model = new TopTrumpModel();
+		
 		
 		model.loadDeck(deckFile);
 		model.shuffle(model.getGameDeck(), model.getNumofcards());
 		model.loadPlayer();
+		try {
+			dataBase.initialPlayer();
+		}catch(Exception e) {
+			
+		}
 		model.setNumOfRounds(0);
 		newRound();
 		return oWriter.writeValueAsString(0);
@@ -190,16 +201,14 @@ public class TopTrumpsRESTAPI {
 		}
 		list.add(gameData);
 
-		dataBase = new TopTrumpJDBC(model);
+		
+		
 
 		int lastgid=dataBase.lastGidbefore();
-		// int lastpid=dataBase.lastPidbefore()+1;
-		// for(int i=0;i<5;i++) {
-		// 	dataBase.insertPlayerDetail(i+lastpid, model.getPlayer()[i].getName(), model.getPlayer()[i].getType());
-		// }
-		dataBase.insertGameResult(lastgid+1, model.getNumOfRounds(), model.getNumOfDraws(), model.roundWinner()+1);
+	
+		dataBase.insertGameResult(lastgid+1, model.getNumOfRounds(), model.getNumOfDraws(), model.roundWinner());
 		for(int i=0;i<5;i++) {
-			dataBase.insertPlayerResult(lastgid+1, i+1, model.getPlayer()[i].getRoundWin());
+			dataBase.insertPlayerResult(lastgid+1, i, model.getPlayer()[i].getRoundWin());
 		}
 
 		return oWriter.writeValueAsString(list);
@@ -208,6 +217,11 @@ public class TopTrumpsRESTAPI {
 	@GET
 	@Path("/gameData")
 	public String gameData() throws Exception {
+//		try {
+//			dataBase.initialPlayer();
+//		}catch(Exception e) {
+//			
+//		}
 
 		List<Integer> list = new ArrayList<>();
 		list.add(dataBase.lastGidbefore());

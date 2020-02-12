@@ -14,8 +14,8 @@ public class test {
 		TopTrumpController controller=new TopTrumpController(model,view,jdbc,log);
 		view.setPrintstream(System.out);
 		view.setSc(new Scanner(System.in));
-		controller.game();
-		//controller.gameStatus();
+		//controller.game();
+		controller.gameStatus();
 		
 		//model.printDeck();
 		view.closeSc();
