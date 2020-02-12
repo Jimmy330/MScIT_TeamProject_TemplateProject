@@ -14,32 +14,36 @@ public class TopTrumpsCLIApplication {
  	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 
 		boolean writeGameLogsToFile = false; // Should we write game logs to file?
 		if (args[0].equalsIgnoreCase("true")) writeGameLogsToFile=true; // Command line selection
 		
 		// State
 		boolean userWantsToQuit = false; // flag to check whether the user wants to quit the application
+		TopTrumpModel model=new TopTrumpModel();
+		TopTrumpJDBC jdbc=new TopTrumpJDBC(model);
 		
-		// Loop until the user wants to exit the game
+		//jdbc.create();
+		TopTrumpView view=new TopTrumpView(model);
+		
+		TestLog log=new TestLog(model,writeGameLogsToFile);
+		TopTrumpController controller=new TopTrumpController(model,view,jdbc,log);
+		view.setPrintstream(System.out);
+		view.setSc(new Scanner(System.in));
+		
 		while (!userWantsToQuit) {
-
+			
 			// ----------------------------------------------------
 			// Add your game logic here based on the requirements
 			// ----------------------------------------------------
-//			TopTrumpModel model=new TopTrumpModel(writeGameLogsToFile);
-//			TopTrumpView view=new TopTrumpView(model);
-//			TopTrumpController controller=new TopTrumpController(model,view.jd);
-//			view.setPrintstream(System.out);
-//			view.setSc(new Scanner(System.in));
-//			controller.game();
-//			model.printDeck();
-//			view.closeSc();
-			userWantsToQuit=true; // use this when the user wants to exit the game
+			
+			controller.selectMenu();
+			// Loop until the user wants to exit the game
+			userWantsToQuit=controller.wantsToQuit();// use this when the user wants to exit the game
 			
 		}
-
+		view.closeSc();
 
 	}
 

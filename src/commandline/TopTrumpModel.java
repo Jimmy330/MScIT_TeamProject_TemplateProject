@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class TopTrumpModel {
 	private final static int numOfCards = 40;
-	private Card[] gameDeck = new Card[50];// ���п�Ƭ
-	private Card[] commonDeck = new Card[50];// ��Ϸƽ��ʱ�����Ĺ�����
-	private int cardsInCommonDeck = 0;
+	private Card[] gameDeck = new Card[50];//all the card involved in the game 
+	private Card[] commonDeck = new Card[50];//common deck when round draws
+	private int cardsInCommonDeck = 0;// counter of the cards in common deck
 	private Player[] player = new Player[5];
 	private int numOfDraws = 0;
-	private int numOfRounds = 0;// �غ���
+	private int numOfRounds = 0;
 	private Card winnerCard;
 	private int indexOfCategory;
 	private int selector;
@@ -26,7 +26,8 @@ public class TopTrumpModel {
 
 	}
 	
-	public void shuffle(Card[] deck,int size) {
+	public void shuffle(Card[] deck,int size) {//shuffle the deck,can be used to shuffle game deck or common deck
+		if(size<=1) return;
 		Random rd=new Random();
 		for(int i=0;i<100;i++) {
 			int i1=rd.nextInt(size);
@@ -37,17 +38,16 @@ public class TopTrumpModel {
 		}
 	}
 	
-	public void drawPhase(){
+	public void drawPhase(){// each player draw their card
 		for (int i = 0; i < 5; i++) {
 			if (player[i].isAlive()) {
 				player[i].drawCard();
-				commonDeck[cardsInCommonDeck++] = player[i].getHand();
 			}
 		}
 
 	}
 
-	public int selectPhase() {
+	public int selectPhase() {//selector select the category to compete
 		// if (numOfRounds == 1) {
 		// 	Random rd = new Random();
 		// 	int n = rd.nextInt(5);
@@ -55,8 +55,8 @@ public class TopTrumpModel {
 		// }
 
 		if (selector == 0)
-			return -1;
-		return player[selector].getGreatCate();
+			return -1;//return -1 when selector is human, when game controller get -1,controller will ask human player for category
+		return player[selector].getGreatCate();//if the selector is ai, return selector's biggest category
 
 	}
 
@@ -64,15 +64,26 @@ public class TopTrumpModel {
 		
 		// round winner gains cards
 		int winner = roundWinner();
-		if (winner > -1) {
-			player[winner].win();
+		
+		if (winner > -1) {//there is a winner
+			player[winner].win();//increase the winner's roundwin counter
 			shuffle(commonDeck,cardsInCommonDeck);
 			for (int i = 0; i < cardsInCommonDeck; i++) {
 				player[winner].gainCard(commonDeck[i]);
-			}
+			}//shuffle the common deck then put commondeck into winner's deck
+			for (int i = 0; i < 5; i++) {
+				if (player[i].isAlive()) {
+					player[winner].gainCard(player[i].getHand());
+				}
+			}//winner gets others hand
 			cardsInCommonDeck = 0;
 			selector = winner;
-		}else {
+		}else {//draw
+			for (int i = 0; i < 5; i++) {
+				if (player[i].isAlive()) {
+					commonDeck[cardsInCommonDeck++] = player[i].getHand();
+				}
+			}//cards go to common deck
 			numOfDraws++;
 		}
 		for(int i =0;i<player.length;i++){
@@ -80,7 +91,7 @@ public class TopTrumpModel {
 		}
 	}
 
-	public Card winnerCard() {
+	public Card winnerCard() {// return the winner cards
 		int[] cate = new int[5];
 		int max = 0;
 		Card res = null;
@@ -97,7 +108,7 @@ public class TopTrumpModel {
 		return res;
 	}
 
-	public int roundWinner() {
+	public int roundWinner() {//return the index of round winner, return -1 if round draws
 		int[] categoryValue = new int[5];
 		int maxValue = 0;
 		int winner = -1;

@@ -35,9 +35,14 @@ public class TopTrumpView {
 						   "--- Top Trumps   ---\n" + 
 						   "--------------------");
 	}
-	
+	public void printcontinue() {
+		printstream.print("\n\nDo you want to quit?\n" + 
+				"	0: quit\n" + 
+				"	other numbers: continue\n" + 
+				"Enter the number for your selection:");
+	}
 	public void printSelectMenu() {
-		printstream.print("Do you want to see past results or play a game?\n" + 
+		printstream.print("\n\nDo you want to see past results or play a game?\n" + 
 				"   1: Print Game Statistics\n" + 
 				"   2: Play game\n" + 
 				"Enter the number for your selection:");

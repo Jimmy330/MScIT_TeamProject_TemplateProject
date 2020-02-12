@@ -14,10 +14,16 @@ public class TopTrumpController {
 		this.log=log;
 	}
 	
-	public void selectMenu(int choice) {
-		//if(choice==1) {
-		//	viewObject.
-		//}
+	public void selectMenu() throws Exception{
+		viewObject.printSelectMenu();
+		int k=viewObject.scanInt();
+		if(k==1) {
+			this.gameStatus();
+		}
+		if(k==2) {
+			this.game();
+		}
+		
 	}
 	public void gameStatus() throws Exception{
 		int s1=jdbcObject.lastGidbefore();
@@ -27,9 +33,15 @@ public class TopTrumpController {
 		int s5=jdbcObject.largeRounds();
 		viewObject.printGameStatus(s1,s2,s3,s4,s5);
 	}
+	public boolean wantsToQuit() {
+		viewObject.printcontinue();;
+		int k=viewObject.scanInt();
+		if(k==0) {
+			return true;
+		}
+			return false;
+	}
 	public void game() throws Exception {
-		int lastgid=jdbcObject.lastGidbefore();
-		int lastpid=jdbcObject.lastPidbefore()+1;
 		
 
 		log.loadCardLog();
@@ -40,9 +52,7 @@ public class TopTrumpController {
 		modelObject.loadPlayer();
 		log.loadPlayerCardLog();
 		
-		for(int i=0;i<5;i++) {
-			jdbcObject.insertPlayerDetail(i+lastpid, modelObject.getPlayer()[i].getName(), modelObject.getPlayer()[i].getType());
-		}
+
 		modelObject.setNumOfRounds(0);	
 		
 		
@@ -77,9 +87,16 @@ public class TopTrumpController {
 			
 		}
 		log.gameWinnerLog();
+		try {
+			jdbcObject.create();
+			jdbcObject.initialPlayer();
+		}catch(Exception e) {
+			
+		}
+		int lastgid=jdbcObject.lastGidbefore();
 		jdbcObject.insertGameResult(lastgid+1, modelObject.getNumOfRounds(), modelObject.getNumOfDraws(), modelObject.roundWinner());
 		for(int i=0;i<5;i++) {
-			jdbcObject.insertPlayerResult(lastgid+1, i+lastpid, modelObject.getPlayer()[i].getRoundWin());
+			jdbcObject.insertPlayerResult(lastgid+1, i, modelObject.getPlayer()[i].getRoundWin());
 		}
 	}
 }

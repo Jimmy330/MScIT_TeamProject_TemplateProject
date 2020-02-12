@@ -8,14 +8,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class TopTrumpJDBC {
-	private String url="jdbc:postgresql://localhost:5433/postgres";
-	private String user = "postgres";
-	private String password = "123456";
+//	private String url="jdbc:postgresql://localhost:5433/postgres";
+//	private String user = "postgres";
+//	private String password = "123456";
 	
-	
-	//private String url = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/m_19_2453447x";
-//	private String user = "m_19_2453447x";
-//	private String password = "2453447x";
+	private String url = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/m_19_2453447x";
+	private String user = "m_19_2453447x";
+	private String password = "2453447x";
 	
 	private Connection conn;
 	private TopTrumpModel modelObject;
@@ -156,8 +155,13 @@ public class TopTrumpJDBC {
 				"on delete cascade on update cascade);";
 		Statement state = conn.createStatement(); 
 		state.executeUpdate(sql);
+		
 	}
 	
-	
+	public void initialPlayer() throws Exception {
+		for(int i=0;i<5;i++) {
+			this.insertPlayerDetail(i, modelObject.getPlayer()[i].getName(), modelObject.getPlayer()[i].getType());
+		}
+	}
 	
 }

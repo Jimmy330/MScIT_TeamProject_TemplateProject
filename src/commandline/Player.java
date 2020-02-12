@@ -6,7 +6,7 @@ public class Player {
 	private Card[] deck;// player's card deck
 	private Card handCard;// the top card of the player's card deck
 	private int numOfCards;
-	private int roundWin=0;
+	private int roundWin=0;//counter of the rounds this player wins
 
 	
 	public Player(String name, int type) {// constructor
@@ -21,7 +21,8 @@ public class Player {
 	public int getRoundWin() {
 		return roundWin;
 	}
-	public int getGreatCate() {
+	public int getGreatCate() {// get the biggest category of this player's hand card
+							   // to help ai players select category
 		int res=1;
 		int max=0;
 		for(int i=1;i<=5;i++) {
