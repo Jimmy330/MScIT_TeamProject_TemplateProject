@@ -21,7 +21,7 @@
     <!--Define our own Styling of the Website-->
     <style>
         body {
-            background-image: url(https://i.ibb.co/rmBjPS4/background.jpg);
+            background-image: url(/assets/background.jpeg);
             background-size: cover;
         }
 
@@ -324,7 +324,7 @@
                     card.appendChild(categoryInfo);
 
                     var cardback = document.createElement("img");
-                    cardback.src = "https://i.ibb.co/PYYZqjQ/cardback.jpg";
+                    cardback.src = "/assets/cardback.png";
                     cardback.className = "cardback";
                     cardback.id = "cardback" + playerCard[i].name;
 

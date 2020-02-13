@@ -20,7 +20,7 @@
         
         <style>
             body {
-                background-image: url(https://i.ibb.co/rmBjPS4/background.jpg);
+                background-image: url(/assets/background.jpeg);
                 background-color: rgba(0, 0, 0, 0.2);
                 background-size: cover;
             }
