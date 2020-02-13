@@ -26,11 +26,17 @@
         }
 
         .cardarea {
-            width: 170px;
+            
+            width: 200px;
             height: 300px;          
             float: left;
             display: block;
-            margin-left: 4%;
+            margin-left: 1%;
+            border-radius: 5px;
+            border: solid;
+            border-color: rgba(0, 0, 0, 0);
+            border-width: 1px;
+            padding: 5px;
 
         }
 
@@ -43,6 +49,7 @@
             text-align: center;
             background-color: rgba(255, 255, 255);
             display: none;
+            margin: 10px;
             
 
         }
@@ -54,6 +61,7 @@
             border-radius: 5px;
             text-align: center;
             display: block;
+            margin: 10px;
 
         }
         .losebackground{
@@ -160,6 +168,7 @@
                 style="height: 200px;font-size: medium;color:aliceblue;;background-color:rgba(128, 127, 127, 0.199);padding: 0.8rem;">
             </div>
             <div id="button">
+                <button id="nextSelection" onclick="selection()">NEXT CATEGORY SELECTION</button>
                 <button id="showWinner" onclick="roundWinner()">SHOW WINNER</button>
                 <button id="nextRound" onclick="nextRound()"> NEXT ROUND</button>
                 <button id="return" onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
@@ -204,7 +213,7 @@
         // Method that is called on page load
         function initalize() {
 
-            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/initalize");
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/startGame");
             if (!xhr) {
                 alert("CORS not supported");
             }
@@ -215,16 +224,14 @@
                 loadCards();
                 getRoundNo();
                 getCommonDeck();
-                getSelector();
+                getSelector();               
+                
             }
             xhr.send();
 
 
         }
 
-        // -----------------------------------------
-        // Add your other Javascript methods Here
-        // -----------------------------------------
         function getRoundNo() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundNo");
             if (!xhr) {
@@ -366,27 +373,45 @@
         }
 
         // get selector for each round
+        var selector="";
         function getSelector() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/selector");
             if (!xhr) {
                 alert("CORS not supported");
             }
             xhr.onload = function (e) {
-                var selector = JSON.parse(xhr.response);
+                selector = JSON.parse(xhr.response);
                 console.log(selector);
-
-                if (selector.type == 1) {
-                    document.getElementById("message").innerHTML = "It's your turn to select a category!"
-                    document.getElementById("select").style.display = "block";
-                    document.getElementById("category").style.display="block";
-                } else {
-                    document.getElementById("message").innerHTML = "The active player: "+selector.name + "<br> Selected <strong>" + selector.category+"</strong>";
-                    document.getElementById("showWinner").style.display = "block";
-                }
-
+                
+                document.getElementById("message").innerHTML = "The active player is "+selector.name;
+                document.getElementById("nextSelection").style.display="block";                           
             }
 
             xhr.send();
+        }
+
+        function selection(){
+            document.getElementById(selector.name).style.borderColor="#A0A0A0"; 
+            if (selector.type == 1) {
+                    document.getElementById("message").innerHTML = "Please select a category!"
+                    document.getElementById("select").style.display = "block";
+                    document.getElementById("category").style.display="block";
+                } else {
+                    document.getElementById("message").innerHTML = selector.name + ' selected <strong>" '+ selector.category+'"</strong>';
+                    document.getElementById("showWinner").style.display = "block";
+                    cardFaceUp();                  
+                }
+  
+            document.getElementById("nextSelection").style.display="none";
+
+           
+        }
+
+        function cardFaceUp(){
+            for (var i = 1; i < playerCard.length; i++) {
+                    document.getElementById("card" + playerCard[i].name).style.display = "block";
+                    document.getElementById("cardback" + playerCard[i].name).style.display = "none";
+                }
         }
 
         function selectCategory(category) {
@@ -400,6 +425,7 @@
                 document.getElementById("showWinner").style.display = "block";
                 document.getElementById("category").style.display="none";
                 document.getElementById("message").innerHTML = selectResult.name + " selected <strong>" + selectResult.category+"</strong>";
+                cardFaceUp();   
 
             };
 
@@ -414,11 +440,7 @@
             xhr.onload = function (e) {
                 var roundWinner = JSON.parse(xhr.response);
                 console.log(roundWinner);
-
-                for (var i = 1; i < playerCard.length; i++) {
-                    document.getElementById("card" + playerCard[i].name).style.display = "block";
-                    document.getElementById("cardback" + playerCard[i].name).style.display = "none";
-                };
+              
                 if (roundWinner[0] == 0) {
                     var message = "Opps~! This round is a draw! <br>" + "There are " + roundWinner[1] + " cards in Communal Pile now"
                     document.getElementById("message").innerHTML = message;
@@ -429,6 +451,7 @@
                 }
                 document.getElementById("showWinner").style.display = "none";
                 document.getElementById("nextRound").style.display = "block";
+                document.getElementById(selector.name).style.borderColor="rgba(0,0,0,0)";
 
             }
             xhr.send();
@@ -443,20 +466,20 @@
                 var nextRound = JSON.parse(xhr.response);
                 console.log(nextRound);
                 document.getElementById("nextRound").style.display = "none";
+                
+                
                 if (nextRound == false) {
                     gameOver();
                 } else {
                     for (var i = 1; i < playerCard.length; i++) {
                         document.getElementById("AIcardArea").removeChild(document.getElementById(playerCard[i].name))
                     };
-
+                    getRoundNo();
                     getCommonDeck();
                     loadCards();
-                    getRoundNo();
                     getSelector();
+                    
                 }
-
-
             }
             xhr.send();
 
@@ -480,7 +503,7 @@
                 document.getElementById("message").innerHTML = message + gamedata;
                 document.getElementById("showWinner").style.display = "none";
                 document.getElementById("return").style.display = "block";
-                //document.getElementById(gameOver[0].gameWinner).style.display = "block";
+                
 
             }
             xhr.send();

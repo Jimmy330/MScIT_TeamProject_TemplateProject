@@ -66,12 +66,6 @@ public class TopTrumpController {
 			viewObject.printDrawCard();
 			
 			
-			// if(modelObject.getNumOfRounds()==1) {
-			// 	Random i = new Random();				
-			// 	int n=i.nextInt(5);
-			// 	modelObject.setSelector(n);
-			// }
-			
 			int indexOfCategory=modelObject.selectPhase();
 			if(indexOfCategory==-1) {
 				viewObject.printSelectCategory();
@@ -95,7 +89,7 @@ public class TopTrumpController {
 		}
 		int lastgid=jdbcObject.lastGidbefore();
 		jdbcObject.insertGameResult(lastgid+1, modelObject.getNumOfRounds(), modelObject.getNumOfDraws(), modelObject.roundWinner());
-		for(int i=0;i<5;i++) {
+		for(int i=0;i<modelObject.getPlayer().length;i++) {
 			jdbcObject.insertPlayerResult(lastgid+1, i, modelObject.getPlayer()[i].getRoundWin());
 		}
 	}

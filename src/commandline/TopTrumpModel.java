@@ -10,7 +10,8 @@ public class TopTrumpModel {
 	private Card[] gameDeck = new Card[50];//all the card involved in the game 
 	private Card[] commonDeck = new Card[50];//common deck when round draws
 	private int cardsInCommonDeck = 0;// counter of the cards in common deck
-	private Player[] player = new Player[5];
+	private int playerNum=5;
+	private Player[] player = new Player[playerNum];
 	private int numOfDraws = 0;
 	private int numOfRounds = 0;
 	private Card winnerCard;
@@ -39,7 +40,7 @@ public class TopTrumpModel {
 	}
 	
 	public void drawPhase(){// each player draw their card
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < playerNum; i++) {
 			if (player[i].isAlive()) {
 				player[i].drawCard();
 			}
@@ -48,11 +49,11 @@ public class TopTrumpModel {
 	}
 
 	public int selectPhase() {//selector select the category to compete
-		// if (numOfRounds == 1) {
-		// 	Random rd = new Random();
-		// 	int n = rd.nextInt(5);
-		// 	selector = n;
-		// }
+		 if (numOfRounds == 1) {
+		 	Random rd = new Random();
+		 	int n = rd.nextInt(5);
+		 	selector = n;
+		 }
 
 		if (selector == 0)
 			return -1;//return -1 when selector is human, when game controller get -1,controller will ask human player for category
@@ -71,7 +72,7 @@ public class TopTrumpModel {
 			for (int i = 0; i < cardsInCommonDeck; i++) {
 				player[winner].gainCard(commonDeck[i]);
 			}//shuffle the common deck then put commondeck into winner's deck
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < playerNum; i++) {
 				if (player[i].isAlive()) {
 					player[winner].gainCard(player[i].getHand());
 				}
@@ -79,7 +80,7 @@ public class TopTrumpModel {
 			cardsInCommonDeck = 0;
 			selector = winner;
 		}else {//draw
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < playerNum; i++) {
 				if (player[i].isAlive()) {
 					commonDeck[cardsInCommonDeck++] = player[i].getHand();
 				}
@@ -95,7 +96,7 @@ public class TopTrumpModel {
 		int[] cate = new int[5];
 		int max = 0;
 		Card res = null;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < playerNum; i++) {
 			if (!player[i].isAlive())
 				continue;
 			cate[i] = player[i].getHand().getCategory()[indexOfCategory];
@@ -112,7 +113,7 @@ public class TopTrumpModel {
 		int[] categoryValue = new int[5];
 		int maxValue = 0;
 		int winner = -1;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < playerNum; i++) {
 			if (!player[i].isAlive()){
 				continue;
 			}
@@ -153,14 +154,14 @@ public class TopTrumpModel {
 
 	public void loadPlayer(){
 		player[0] = new Player("You", 1);// �������
-		for (int i = 1; i <= 4; i++) {
+		for (int i = 1; i < playerNum; i++) {
 			String name = String.format("AI Player %d", i);
 			player[i] = new Player(name, 0);
 		} // 4��ai���
 		int index = 0;// ����ָ��
 		for (int i = 0; i < numOfCards; i++) {
 			player[index++].gainCard(gameDeck[i]);
-			if (index > 4)
+			if (index > playerNum-1)
 				index = 0;
 		}
 	}
@@ -168,7 +169,7 @@ public class TopTrumpModel {
 	public boolean gameIsOver() {
 		int surviver = 0;
 		
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < playerNum; i++) {
 			if (player[i].isAlive()) {
 				surviver++;
 				gameWinner=player[i];
@@ -190,6 +191,10 @@ public class TopTrumpModel {
 		}
 		System.out.println();
 
+	}
+	
+	public void setPlayerNum(int num) {
+		this.playerNum=num;
 	}
 
 

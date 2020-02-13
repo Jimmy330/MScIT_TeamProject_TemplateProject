@@ -96,7 +96,6 @@
 		</div>
 		<div id="buttons" style="text-align: center; margin-top: 2rem;">
 			<button onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
-			<button onclick="window.location.href='http://localhost:7777/toptrumps/game'">NEW GAME</button>
         </div>
 		
 		</div>

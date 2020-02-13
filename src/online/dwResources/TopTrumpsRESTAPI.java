@@ -68,25 +68,27 @@ public class TopTrumpsRESTAPI {
 		dataBase = new TopTrumpJDBC(model);
 		try {
 			dataBase.create();
-			dataBase.initialPlayer();
 		}catch(Exception e) {
 			
-		}
+		};
+	
 	}
-
+	
 	@GET
-	@Path("/initalize")
-	public String initalize() throws Exception {
+	@Path("/AIplayerNum")	
+	public void setPlayerNum(@QueryParam("value")int num){
 		
+		this.num=num;
+		model.setPlayerNum(num+1);
+	}
+	
+	@GET
+	@Path("/startGame")
+	public String startGame() throws Exception {
 		
 		model.loadDeck(deckFile);
 		model.shuffle(model.getGameDeck(), model.getNumofcards());
 		model.loadPlayer();
-//		try {
-//			dataBase.initialPlayer();
-//		}catch(Exception e) {
-//			
-//		}
 		model.setNumOfRounds(0);
 		newRound();
 		return oWriter.writeValueAsString(0);
@@ -100,9 +102,8 @@ public class TopTrumpsRESTAPI {
 
 		for (int i = 0; i <= num; i++) {
 			playerInfo.add(model.getPlayer()[i]);
-		}
-		String list = oWriter.writeValueAsString(playerInfo);
-		return list;
+		}		
+		return oWriter.writeValueAsString(playerInfo);
 	}
 
 	@GET
@@ -115,12 +116,6 @@ public class TopTrumpsRESTAPI {
 	@Path("/commonDeck")
 	public String getCommonDeck() throws JsonProcessingException {
 		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
-	}
-
-	@GET
-	@Path("/player")
-	public void setPlayerNum(@QueryParam("value")int playerNum){
-		
 	}
 
 	@GET
@@ -210,12 +205,9 @@ public class TopTrumpsRESTAPI {
 		
 
 		try {
-			//dataBase.create();
 			dataBase.initialPlayer();
-		}catch(Exception e) {
-			
-		}
-
+		}catch(Exception e) {};
+		
 		int lastgid=dataBase.lastGidbefore();
 	
 		dataBase.insertGameResult(lastgid+1, model.getNumOfRounds(), model.getNumOfDraws(), model.roundWinner());
@@ -229,11 +221,6 @@ public class TopTrumpsRESTAPI {
 	@GET
 	@Path("/gameData")
 	public String gameData() throws Exception {
-//		try {
-//			dataBase.initialPlayer();
-//		}catch(Exception e) {
-//			
-//		}
 
 		List<Integer> list = new ArrayList<>();
 		list.add(dataBase.lastGidbefore());
