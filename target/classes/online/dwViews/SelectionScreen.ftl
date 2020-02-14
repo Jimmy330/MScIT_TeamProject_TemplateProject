@@ -56,7 +56,7 @@
 			<div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
 				<!-- "window.location.href='game'" -->
                 <button onclick=showDialog()>START NEW GAME</button>
-				<button onclick="window.location.href='stats'">GAME STATISTICS</button>
+				<button onclick="window.location.href='toptrumps/stats'">GAME STATISTICS</button>
 				<dialog id="dialog">
 					<h6 id="close" style="text-align: right;" onclick=closeDialog()>X</h6>
 					<h5>Please choose the number of players you want to play against.</h5>
@@ -100,7 +100,7 @@
   					alert("CORS not supported");
 				}
 				xhr.onload = function(e) {
-					window.location.href='game'
+					window.location.href='/toptrumps/game'
 				};
 
 				xhr.send();	
