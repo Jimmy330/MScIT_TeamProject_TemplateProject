@@ -21,7 +21,7 @@
     <!--Define our own Styling of the Website-->
     <style>
         body {
-            background-image: url(/assets/background.jpeg);
+            background-image: url(/assets/background.jpg);
             background-size: cover;
         }
 
