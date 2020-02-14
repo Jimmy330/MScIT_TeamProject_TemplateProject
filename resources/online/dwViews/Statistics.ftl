@@ -20,7 +20,7 @@
 
 		 <style>
             body {
-                background-image: url(/assets/background.jpeg);
+                background-image: url(/assets/background.jpg);
                 background-color: rgba(0, 0, 0, 0.2);
                 background-size: cover;
             }
