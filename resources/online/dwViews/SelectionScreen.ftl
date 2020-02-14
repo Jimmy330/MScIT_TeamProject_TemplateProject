@@ -54,9 +54,9 @@
                 <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
             </div>
 			<div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
-				<!-- "window.location.href='game'" -->
+				
                 <button onclick=showDialog()>START NEW GAME</button>
-				<button onclick="window.location.href='toptrumps/stats'">GAME STATISTICS</button>
+				<button onclick="window.location.href='http://localhost:7777/toptrumps/stats'">GAME STATISTICS</button>
 				<dialog id="dialog">
 					<h6 id="close" style="text-align: right;" onclick=closeDialog()>X</h6>
 					<h5>Please choose the number of players you want to play against.</h5>
@@ -100,7 +100,7 @@
   					alert("CORS not supported");
 				}
 				xhr.onload = function(e) {
-					window.location.href='/toptrumps/game'
+					window.location.href='http://localhost:7777/toptrumps/game'
 				};
 
 				xhr.send();	
