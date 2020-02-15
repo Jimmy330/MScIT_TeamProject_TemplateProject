@@ -11,11 +11,11 @@ public class TopTrumpModel {
 	private Card[] commonDeck = new Card[50];//common deck when round draws
 	private int cardsInCommonDeck = 0;// counter of the cards in common deck
 	private int playerNum=5;
-	private Player[] player = new Player[playerNum];
+	private Player[] player = new Player[playerNum];//players
 	private int numOfDraws = 0;
 	private int numOfRounds = 0;
-	private Card winnerCard;
-	private int indexOfCategory;
+	private Card winnerCard;//store the winner card of certain round
+	private int indexOfCategory;//the category selected this round
 	private int selector;
 	private Player gameWinner;
 
@@ -116,25 +116,25 @@ public class TopTrumpModel {
 		for (int i = 0; i < playerNum; i++) {
 			if (!player[i].isAlive()){
 				continue;
-			}
+			}//skip losers
 			categoryValue[i] = player[i].getHand().getCategory()[indexOfCategory];
 			if (categoryValue[i] > maxValue) {
 				maxValue = categoryValue[i];
 				winner = i;
-				winnerCard = player[i].getHand();
-			} else if (categoryValue[i] == maxValue) {
+				winnerCard = player[i].getHand();//if player i get bigger cate value, he wins
+			} else if (categoryValue[i] == maxValue) {//if there are two max value, this round draws
 				winner = -1;
 			}
 		}
 		return winner;
 	}
 
-	public void loadDeck(File f) {
+	public void loadDeck(File f) {//load deck info from File f
 		try {
 			Scanner input = new Scanner(f);
 			String firstLine = input.nextLine();
 			String[] firstLineSplit = firstLine.split(" ");
-			Card.setCategoryName(firstLineSplit);
+			Card.setCategoryName(firstLineSplit);//get name of categories
 			int cardNumber = 0;
 			while (input.hasNext()) {
 				String[] line = input.nextLine().split(" ");
@@ -142,7 +142,7 @@ public class TopTrumpModel {
 				for (int i = 1; i <= 5; i++) {
 					category[i] = Integer.parseInt(line[i]);
 				}
-				gameDeck[cardNumber++] = new Card(line[0], category);
+				gameDeck[cardNumber++] = new Card(line[0], category);//load data of one card every loop
 			}
 //			shuffle(gameDeck,numOfCards);
 			input.close();
@@ -153,26 +153,26 @@ public class TopTrumpModel {
 	}
 
 	public void loadPlayer(){
-		player[0] = new Player("You", 1);// �������
+		player[0] = new Player("You", 1);// human player
 		for (int i = 1; i < playerNum; i++) {
 			String name = String.format("AI Player %d", i);
 			player[i] = new Player(name, 0);
-		} // 4��ai���
-		int index = 0;// ����ָ��
+		} //ai players
+		int index = 0;
 		for (int i = 0; i < numOfCards; i++) {
 			player[index++].gainCard(gameDeck[i]);
 			if (index > playerNum-1)
 				index = 0;
-		}
+		}//divide the cards to players
 	}
 
-	public boolean gameIsOver() {
+	public boolean gameIsOver() {//return true when only one player survives
 		int surviver = 0;
 		
 		for (int i = 0; i < playerNum; i++) {
 			if (player[i].isAlive()) {
 				surviver++;
-				gameWinner=player[i];
+				gameWinner=player[i];//store the winner
 			}				
 		}
 		if(surviver == 1||surviver == 0){
@@ -191,7 +191,7 @@ public class TopTrumpModel {
 		}
 		System.out.println();
 
-	}
+	}//it is a test method
 	
 	public void setPlayerNum(int num) {
 		this.playerNum=num;

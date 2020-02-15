@@ -54,16 +54,16 @@ public class TopTrumpController {
 		
 
 		modelObject.setNumOfRounds(0);	
+		//initialize the game
 		
-		
-		while(!modelObject.gameIsOver()) {
+		while(!modelObject.gameIsOver()) {//each loop is a round
 			modelObject.setNumOfRounds(modelObject.getNumOfRounds()+1);
 			
 			modelObject.drawPhase();			
 			log.currentCardLog();
 			
 			viewObject.printRoundTitle();
-			viewObject.printDrawCard();
+			viewObject.printDrawCard();//players draw a card
 			
 			
 			int indexOfCategory=modelObject.selectPhase();
@@ -72,21 +72,26 @@ public class TopTrumpController {
 				indexOfCategory=viewObject.scanInt();
 			}
 			modelObject.setIndexOfCategory(indexOfCategory);			
-			log.selectionLog(indexOfCategory);
+			log.selectionLog(indexOfCategory);//player select a category
 			
 			modelObject.judgePhase();
 			viewObject.printResult();
 			log.communalPileLog();
-			log.loadPlayerCardLog();
+			log.loadPlayerCardLog();//judge the result of the round
 			
 		}
 		log.gameWinnerLog();
-		try {
+		viewObject.printGameEnd();
+		
+		try {//try to create table
 			jdbcObject.create();
 			jdbcObject.initialPlayer();
 		}catch(Exception e) {
-			
+			//if table already exists, catch a exception and skip this
 		}
+		/*
+		 * insert the values to database
+		 */
 		int lastgid=jdbcObject.lastGidbefore();
 		jdbcObject.insertGameResult(lastgid+1, modelObject.getNumOfRounds(), modelObject.getNumOfDraws(), modelObject.roundWinner());
 		for(int i=0;i<modelObject.getPlayer().length;i++) {
