@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class TopTrumpJDBC {
-	private String url="jdbc:postgresql://localhost:5432/mydb";
+	private String url="jdbc:postgresql://localhost:5433/postgres";
 	private String user = "postgres";
 	private String password = "123456";
 	

@@ -210,6 +210,7 @@
 
     <script type="text/javascript">
 
+        var selector="";
         // Method that is called on page load
         function initalize() {
 
@@ -218,13 +219,14 @@
                 alert("CORS not supported");
             }
             xhr.onload = function (e) {
-                var responseText = JSON.parse(xhr.response);
-                console.log(responseText);
+                selector = JSON.parse(xhr.response);
+                console.log(selector);
 
                 loadCards();
                 getRoundNo();
                 getCommonDeck();
-                getSelector();               
+                document.getElementById("message").innerHTML = "The active player is "+selector.name;
+                document.getElementById("nextSelection").style.display="block";              
                 
             }
             xhr.send();
@@ -373,7 +375,7 @@
         }
 
         // get selector for each round
-        var selector="";
+        
         function getSelector() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/selector");
             if (!xhr) {
