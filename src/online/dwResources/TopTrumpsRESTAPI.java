@@ -59,9 +59,7 @@ public class TopTrumpsRESTAPI {
 	private TopTrumpJDBC dataBase;
 
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws Exception {
-		// ----------------------------------------------------
-		// Add relevant initalization here
-		// ----------------------------------------------------
+
 		num = conf.getNumAIPlayers();
 		deckFile = new File(conf.getDeckFile());
 		model = new TopTrumpModel();
@@ -87,11 +85,11 @@ public class TopTrumpsRESTAPI {
 	public String startGame() throws Exception {
 		
 		model.loadDeck(deckFile);
-		model.shuffle(model.getGameDeck(), model.getNumofcards());
+		model.shuffle(model.getGameDeck(), TopTrumpModel.getNumofcards());
 		model.loadPlayer();
 		model.setNumOfRounds(0);
-		newRound();
-		return oWriter.writeValueAsString(0);
+		
+		return newRound();
 	}
 
 	@GET

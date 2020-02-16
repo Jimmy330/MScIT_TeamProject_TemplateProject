@@ -3,7 +3,6 @@ package commandline;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class TestLog {
 	private TopTrumpModel model;

@@ -51,7 +51,7 @@ public class TopTrumpModel {
 	public int selectPhase() {//selector select the category to compete
 		 if (numOfRounds == 1) {
 		 	Random rd = new Random();
-		 	int n = rd.nextInt(5);
+		 	int n = rd.nextInt(playerNum);
 		 	selector = n;
 		 }
 
@@ -144,7 +144,7 @@ public class TopTrumpModel {
 				}
 				gameDeck[cardNumber++] = new Card(line[0], category);//load data of one card every loop
 			}
-//			shuffle(gameDeck,numOfCards);
+
 			input.close();
 			
 		} catch (IOException e) {
@@ -183,15 +183,15 @@ public class TopTrumpModel {
 	
 
 
-
-	public void printDeck() {
+    
+	public void printDeck() {//it is a test method
 		String[] firstline = Card.getCategoryName();
 		for (int i = 0; i < 6; i++) {
 			System.out.printf("%s\t", firstline[i]);
 		}
 		System.out.println();
 
-	}//it is a test method
+	}
 	
 	public void setPlayerNum(int num) {
 		this.playerNum=num;
