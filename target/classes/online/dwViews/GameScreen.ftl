@@ -68,7 +68,6 @@
             
             width: 170px;
             height: 260px;
-
             border-radius: 5px;
             text-align: center;
             padding: 170px 0;
@@ -152,13 +151,14 @@
 
     <div class="container">
 
-        <!-- Add your HTML Here -->
+        <!-- LOGO -->
 
         <div>
             <h1 style="font-weight: bold;color:rgba(255, 255, 255, 0.664);font-style: italic;text-align: right;">
                 Toptrumps</h1>
         </div>
 
+        <!-- Menu in the left side, place round number, communal pile , message information and all buttons -->
         <div id="menu" style="width: 22%;height: 640px;background-color: rgba(0, 0, 0, 0.8);float: left;">
             <div id="round" style="height: 5rem;border-style:groove;border-width: 1px;padding-left: 5px;">
                 <h2 id="roundNo" style="color: aliceblue;"></h2>
@@ -182,10 +182,9 @@
                         <a href="#" onclick=selectCategory(5)>Speed</a>
                     </div> 
                 </div>
-
             </div>
-
         </div>
+        <!-- Human card area -->
         <div id="humanCardArea" style="width: 78%;height: 320px;;background-color:rgba(0, 0, 0, 0.8);float: left;">
             <div id="You" class="cardarea" style="display: block">
                 <h3 id="humanPlayerName" class="playerName"></h3>
@@ -199,6 +198,7 @@
 
         </div>
 
+        <!-- AI cards area -->
         <div id="AIcardArea" style="width: 78%;height: 320px;background-color: rgba(0, 0, 0, 0.8); float: left;">
         </div>
 
@@ -210,7 +210,7 @@
 
     <script type="text/javascript">
 
-        var selector="";
+        var activePlayer="";// active player
         // Method that is called on page load
         function initalize() {
 
@@ -219,21 +219,19 @@
                 alert("CORS not supported");
             }
             xhr.onload = function (e) {
-                selector = JSON.parse(xhr.response);
-                console.log(selector);
+                activePlayer = JSON.parse(xhr.response);
+                console.log(activePlayer);
 
                 loadCards();
                 getRoundNo();
                 getCommonDeck();
-                document.getElementById("message").innerHTML = "The active player is "+selector.name;
-                document.getElementById("nextSelection").style.display="block";              
-                
+                document.getElementById("message").innerHTML = "The active player is "+activePlayer.name;
+                document.getElementById("nextSelection").style.display="block";                              
             }
             xhr.send();
-
-
         }
 
+        // get the round number for each round
         function getRoundNo() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundNo");
             if (!xhr) {
@@ -243,10 +241,10 @@
                 var responseText = xhr.response;
                 document.getElementById("roundNo").innerHTML = "Round " + responseText;
             };
-
             xhr.send();
         }
 
+        // get the card number in communal pile
         function getCommonDeck() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/commonDeck");
             if (!xhr) {
@@ -264,6 +262,7 @@
 
         var playerCard = "";
 
+        // load player and card information
         function loadCards() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/card");
             if (!xhr) {
@@ -286,7 +285,7 @@
                 document.getElementById("humanPlayer").innerHTML = category;
                 document.getElementById("cardYou").style.backgroundColor = "rgb(255, 255, 255)";
 
-                // load AIs card deck here
+                // load AIs card deck here, according to AI player's number
                 for (var i = 1; i < playerCard.length; i++) {
 
                     var ai_cardarea = document.createElement("div");
@@ -301,7 +300,6 @@
                     var numOfCards = document.createElement("h6");
                     numOfCards.className = "numOfCard";
                     numOfCards.innerText = "Card(" + playerCard[i].numOfCards + ")"
-
                     ai_cardarea.appendChild(numOfCards);
 
                     document.getElementById("AIcardArea").appendChild(ai_cardarea);
@@ -317,7 +315,6 @@
 
                     var img = document.createElement("img");
                     img.src=loadImg(playerCard[i].hand.name);
-
                     card.appendChild(img);            
 
                     card.appendChild(cardName);
@@ -341,6 +338,7 @@
 
                 }
 
+                // player will be hidden when losing the game
                 for (var i = 0; i < playerCard.length; i++) {
                     if (playerCard[i].alive == false) {
                         document.getElementById(playerCard[i].name).style.display = "none";
@@ -374,7 +372,7 @@
 
         }
 
-        // get selector for each round
+        // get the active player for each round
         
         function getSelector() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/selector");
@@ -382,24 +380,25 @@
                 alert("CORS not supported");
             }
             xhr.onload = function (e) {
-                selector = JSON.parse(xhr.response);
-                console.log(selector);
+                activePlayer = JSON.parse(xhr.response);
+                console.log(activePlayer);
                 
-                document.getElementById("message").innerHTML = "The active player is "+selector.name;
+                document.getElementById("message").innerHTML = "The active player is "+activePlayer.name;
                 document.getElementById("nextSelection").style.display="block";                           
             }
 
             xhr.send();
         }
 
+        //show the choice of active player
         function selection(){
-            document.getElementById(selector.name).style.borderColor="#A0A0A0"; 
-            if (selector.type == 1) {
+            document.getElementById(activePlayer.name).style.borderColor="#A0A0A0"; 
+            if (activePlayer.type == 1) {
                     document.getElementById("message").innerHTML = "Please select a category!"
                     document.getElementById("select").style.display = "block";
                     document.getElementById("category").style.display="block";
                 } else {
-                    document.getElementById("message").innerHTML = selector.name + ' selected <strong>" '+ selector.category+'"</strong>';
+                    document.getElementById("message").innerHTML = activePlayer.name + ' selected <strong>"'+ activePlayer.category+'"</strong>';
                     document.getElementById("showWinner").style.display = "block";
                     cardFaceUp();                  
                 }
@@ -409,6 +408,7 @@
            
         }
 
+        // helper method to make card face up
         function cardFaceUp(){
             for (var i = 1; i < playerCard.length; i++) {
                     document.getElementById("card" + playerCard[i].name).style.display = "block";
@@ -416,6 +416,7 @@
                 }
         }
 
+        //select category method when it comes to human player's turn
         function selectCategory(category) {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/category?value=" + category);
             if (!xhr) {
@@ -430,10 +431,10 @@
                 cardFaceUp();   
 
             };
-
             xhr.send();
         }
 
+        // show round winner
         function roundWinner() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/roundWinner");
             if (!xhr) {
@@ -453,12 +454,13 @@
                 }
                 document.getElementById("showWinner").style.display = "none";
                 document.getElementById("nextRound").style.display = "block";
-                document.getElementById(selector.name).style.borderColor="rgba(0,0,0,0)";
+                document.getElementById(activePlayer.name).style.borderColor="rgba(0,0,0,0)";
 
             }
             xhr.send();
         }
 
+        // start the next round
         function nextRound() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/newRound");
             if (!xhr) {
@@ -467,9 +469,7 @@
             xhr.onload = function (e) {
                 var nextRound = JSON.parse(xhr.response);
                 console.log(nextRound);
-                document.getElementById("nextRound").style.display = "none";
-                
-                
+                document.getElementById("nextRound").style.display = "none";                              
                 if (nextRound == false) {
                     gameOver();
                 } else {
@@ -487,6 +487,7 @@
 
         }
 
+        // get the game winner and each player's game data 
         function gameOver() {
             var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/gameWinner");
             if (!xhr) {
@@ -499,13 +500,11 @@
                 var gamedata = "";
                 for (var key in gameOver[1]) {
                     gamedata += key + " won " + gameOver[1][key] + " rounds <br>";
-
                 }
 
                 document.getElementById("message").innerHTML = message + gamedata;
                 document.getElementById("showWinner").style.display = "none";
-                document.getElementById("return").style.display = "block";
-                
+                document.getElementById("return").style.display = "block";               
 
             }
             xhr.send();
@@ -538,7 +537,6 @@
         }
 
     </script>
-
 
 
 </body>

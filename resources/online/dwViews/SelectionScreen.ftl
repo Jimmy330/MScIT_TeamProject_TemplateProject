@@ -54,7 +54,7 @@
                 <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
             </div>
 			<div id="ButtonNewGame" style="text-align: center;margin-top: 10rem;">
-				
+				<!-- Dialog ares, chose the number of opponent -->
                 <button onclick=showDialog()>START NEW GAME</button>
 				<button onclick="window.location.href='http://localhost:7777/toptrumps/stats'">GAME STATISTICS</button>
 				<dialog id="dialog">
@@ -81,15 +81,17 @@
 		</div>
 		
 		<script type="text/javascript">
-			
+			// close dialog
 			function closeDialog(){
 				document.getElementById("dialog").style.display="none";
 			}
 
+			// open dialog
 			function showDialog(){
 				document.getElementById("dialog").style.display="block";
 			}
 			
+			// direct user to game screen
 			function playGame(){
 				
 				var select=document.getElementById("select");

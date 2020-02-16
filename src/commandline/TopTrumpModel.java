@@ -183,15 +183,15 @@ public class TopTrumpModel {
 	
 
 
-
-	public void printDeck() {
+    
+	public void printDeck() {//it is a test method
 		String[] firstline = Card.getCategoryName();
 		for (int i = 0; i < 6; i++) {
 			System.out.printf("%s\t", firstline[i]);
 		}
 		System.out.println();
 
-	}//it is a test method
+	}
 	
 	public void setPlayerNum(int num) {
 		this.playerNum=num;

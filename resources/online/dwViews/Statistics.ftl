@@ -62,11 +62,13 @@
     	
     	<div class="container">
 
-			<!-- Add your HTML Here -->
-			<div id="Banner" style="text-align: center;">
+		<!-- Add your HTML Here -->
+		<div id="Banner" style="text-align: center;">
             <H1 style="background-color: rgba(0, 0, 0, 0.7);font-size: 5rem;font-weight: bold;color: aliceblue;font-style: italic;">Toptrumps</H1>
         </div>
-        <div style="text-align: center;margin-top: 6rem;">
+
+        <!-- Game data table -->
+		<div style="text-align: center;margin-top: 6rem;">
             <table style="border-collapse:separate; border-spacing:20px 15px;">
                 <tr>
 					<td>Number of Games: </td>
@@ -94,6 +96,8 @@
                 </tr>
             </table>
 		</div>
+
+		<!-- Return button -->
 		<div id="buttons" style="text-align: center; margin-top: 2rem;">
 			<button onclick="window.location.href='http://localhost:7777/toptrumps/'">RETURN TO SELECT SCREEN</button>
         </div>
@@ -105,14 +109,12 @@
 			// Method that is called on page load
 			function initalize() {
 				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/gameData"); 
-
 				if (!xhr) {
   					alert("CORS not supported");
 				}
-
 				xhr.onload = function(e) {
  					var gameData = JSON.parse(xhr.response);
-					
+					// Get the game data from database
 					for(var i = 0; i<gameData.length;i++){
 						document.getElementById("d"+i).innerHTML=gameData[i];
 					}	
