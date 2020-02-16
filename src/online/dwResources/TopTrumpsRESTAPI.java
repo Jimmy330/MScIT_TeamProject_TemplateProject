@@ -39,7 +39,10 @@ import jersey.repackaged.com.google.common.collect.Maps;
  * a TopTrumps game to be controled from a Web page.
  */
 public class TopTrumpsRESTAPI {
-
+	private TopTrumpModel model;
+	private int num;// number of AI player
+	private File deckFile;
+	private TopTrumpJDBC dataBase;
 	/**
 	 * A Jackson Object writer. It allows us to turn Java objects into JSON strings
 	 * easily.
@@ -53,18 +56,13 @@ public class TopTrumpsRESTAPI {
 	 * 
 	 * @param conf
 	 */
-	private TopTrumpModel model;
-	private int num;
-	private File deckFile;
-	private TopTrumpJDBC dataBase;
-
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) throws Exception {
 
 		num = conf.getNumAIPlayers();
 		deckFile = new File(conf.getDeckFile());
 		model = new TopTrumpModel();
 		dataBase = new TopTrumpJDBC(model);
-		try {
+		try {// this code is a backup in case that database table has been deleted 
 			dataBase.create();
 		}catch(Exception e) {
 			
@@ -74,7 +72,7 @@ public class TopTrumpsRESTAPI {
 	
 	@GET
 	@Path("/AIplayerNum")	
-	public void setPlayerNum(@QueryParam("value")int num){
+	public void setPlayerNum(@QueryParam("value")int num){//set AI players number
 		
 		this.num=num;
 		model.setPlayerNum(num+1);
@@ -83,7 +81,7 @@ public class TopTrumpsRESTAPI {
 	@GET
 	@Path("/startGame")
 	public String startGame() throws Exception {
-		
+		//Initialise method to load card , shuffle and allocate cards between players
 		model.loadDeck(deckFile);
 		model.shuffle(model.getGameDeck(), TopTrumpModel.getNumofcards());
 		model.loadPlayer();
@@ -94,7 +92,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/card")
-	public String card() throws IOException {
+	public String card() throws IOException {// provide each player's card deck information
 
 		ArrayList<Player> playerInfo = new ArrayList<Player>();
 
@@ -106,19 +104,19 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/roundNo")
-	public String getRoundNo() {
+	public String getRoundNo() {//provide round number data
 		return Integer.toString(model.getNumOfRounds());
 	}
 
 	@GET
 	@Path("/commonDeck")
-	public String getCommonDeck() throws JsonProcessingException {
+	public String getCommonDeck() throws JsonProcessingException {// provide number of cards in communal pile
 		return oWriter.writeValueAsString(model.getCardsInCommonDeck());
 	}
 
 	@GET
 	@Path("/category")
-	public String category(@QueryParam("value") int category) throws IOException {
+	public String category(@QueryParam("value") int category) throws IOException {// get human selected category data and return relative seletion information
 		model.setIndexOfCategory(category);
 
 		HashMap<String, String> selectorInfo = new HashMap<String, String>();
@@ -135,7 +133,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/selector")
-	public String selector() throws IOException {
+	public String selector() throws IOException {// provide selection information
 
 		int indexOfCategory = model.selectPhase();
 		HashMap<String, String> selectorInfo = new HashMap<String, String>();
@@ -155,7 +153,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/roundWinner")
-	public String getRoundWinner() throws IOException {
+	public String getRoundWinner() throws IOException {// provide round result( round winner data or a draw data)
 		model.judgePhase();
 
 		if (model.roundWinner() < 0) {
@@ -170,7 +168,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/newRound")
-	public String newRound() throws IOException {
+	public String newRound() throws IOException {// start next round and return next selector data or game over signal
 
 		if (!model.gameIsOver()) {
 			model.drawPhase();
@@ -184,7 +182,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/gameWinner")
-	public String getGameWinner() throws Exception {
+	public String getGameWinner() throws Exception {// provide game winner and each player's game data
 		List<LinkedHashMap<String, String>> list = new ArrayList<>();
 
 		LinkedHashMap<String, String> gameStatus = Maps.newLinkedHashMap();
@@ -202,10 +200,10 @@ public class TopTrumpsRESTAPI {
 		list.add(gameData);
 		
 
-		try {
+		try {//this is backup method in case database table is deleted
 			dataBase.initialPlayer();
 		}catch(Exception e) {};
-		
+		// insert game result data into database
 		int lastgid=dataBase.lastGidbefore();
 	
 		dataBase.insertGameResult(lastgid+1, model.getNumOfRounds(), model.getNumOfDraws(), model.roundWinner());
@@ -218,7 +216,7 @@ public class TopTrumpsRESTAPI {
 
 	@GET
 	@Path("/gameData")
-	public String gameData() throws Exception {
+	public String gameData() throws Exception {//get past game data from database
 
 		List<Integer> list = new ArrayList<>();
 		list.add(dataBase.lastGidbefore());
